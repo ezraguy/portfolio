@@ -1,0 +1,184 @@
+.main_header {
+  font-size: 40pt;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#home {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway';
+  height: 100vh;
+  width: 100%;
+}
+
+#home .leftDiv {
+  width: 100%;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  background-color: #16697A;
+}
+
+#home .leftDiv .content {
+  margin-left: 35px;
+  float: left;
+}
+
+#home .leftDiv .labelAboveTitle {
+  margin-top: 15px;
+  background-color: #82C0CC;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+}
+
+#home .leftDiv .firstMainHeader {
+  float: left;
+  font-size: 32pt;
+  color: white;
+  font-weight: bold;
+}
+
+#home .leftDiv .underTitleTxt {
+  padding: 0;
+  float: left;
+  color: white;
+  font-size: 14pt;
+}
+
+#home .leftDiv .underTitleTxt p {
+  text-align: left;
+  width: calc(100% - 100px);
+}
+
+#home .rightDiv {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/profile_3.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: .6;
+}
+
+#home .aboutMeBtn {
+  padding-top: 16px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: #82C0CC solid 1px;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  width: 150px;
+  font-weight: 700;
+  border-radius: 50px;
+  float: left;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#home .aboutMeBtn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#home .letsTalk {
+  padding-top: 16px;
+  margin-right: 5px;
+  background-color: #FFFFFF;
+  color: #555555;
+  text-align: center;
+  height: 60px;
+  width: 150px;
+  font-weight: 700;
+  border-radius: 50px;
+  float: left;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#home .letsTalk:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#about {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway';
+  height: 30vh;
+  width: 100%;
+  color: #555555;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .whoMI {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+#about .whoMI .firstHeader {
+  font-family: "Raleway";
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+#about .whoMI .textUnderHeader {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 14pt;
+}
+
+#skills {
+  overflow-x: hidden;
+  margin: 0px;
+  background-color: #176979;
+  padding: 0px;
+  font-family: "Raleway";
+  height: 80vh;
+  margin-top: 50px;
+  font-size: 16pt;
+  color: white;
+}
+
+#skills h3 {
+  font-family: "Raleway";
+  font-size: 30pt;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#contact {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway";
+  height: 50vh;
+  margin-top: 50px;
+  font-size: 16pt;
+}
+/*# sourceMappingURL=sections.css.map */
