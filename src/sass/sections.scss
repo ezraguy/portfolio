@@ -44,6 +44,7 @@ $main_font:'Raleway';
 
             margin-left: 35px;
             float: left;
+
         }
 
         .labelAboveTitle {
@@ -133,6 +134,31 @@ $main_font:'Raleway';
         }
     }
 
+    .sideIcons {
+
+        position: absolute;
+        float: left;
+        bottom: 15px;
+        height: 90px;
+        width: 50px;
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 0px !important;
+
+        svg {
+            margin-top: 10px;
+            width: 30px;
+            fill: white;
+            cursor: pointer;
+            transition: .3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+    }
+
 }
 
 #about {
@@ -180,9 +206,6 @@ $main_font:'Raleway';
 
 
 }
-
-
-
 
 #skills {
     overflow-x: hidden;

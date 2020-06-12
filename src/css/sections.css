@@ -114,6 +114,31 @@
           transform: translateY(-5px);
 }
 
+#home .sideIcons {
+  position: absolute;
+  float: left;
+  bottom: 15px;
+  height: 90px;
+  width: 50px;
+  margin-top: 20px;
+  padding: 0;
+  margin-left: 0px !important;
+}
+
+#home .sideIcons svg {
+  margin-top: 10px;
+  width: 30px;
+  fill: white;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#home .sideIcons svg:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 #about {
   overflow-x: hidden;
   margin: 0px;

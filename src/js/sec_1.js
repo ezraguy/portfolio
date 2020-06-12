@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/sections.css';
 import '../css/topBtn.css';
 import ScrollTopBtn from './scrollTopBtn'
+import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
+import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
 
 
 
@@ -24,12 +26,20 @@ function sec_1() {
                         <a href="#about" className="aboutMeBtn btn ">ABOUT ME</a>
                         <a href="#contact" className="letsTalk btn ">LET'S CHAT</a>
                     </div>
+                </div >
+                <div className="sideIcons">
+                    <a href="https://github.com/ezraguy" target="_blank" rel="noopener noreferrer"><GitSvg /></a>
+                    <a href="https://www.linkedin.com/in/guyezra" target="_blank" rel="noopener noreferrer"><LinkedInSvg /></a>
+
+
+
                 </div>
-            </div >
-            <ScrollTopBtn />
+                <ScrollTopBtn />
+            </div>
             <div className="rightDiv container  col-sm-6">
             </div>
-        </div >
+
+        </div>
     );
 }
 

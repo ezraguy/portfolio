@@ -1,7 +1,6 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import '../css/sections.css';
-import { ReactComponent as ReactSvg } from "../svg/r.svg";
 
 
 function sec_2() {
