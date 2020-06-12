@@ -238,3 +238,10 @@ $main_font:'Raleway';
     margin-top: 50px;
     font-size: 16pt;
 }
+
+// disabling animation delay on mobile
+@media screen and (max-width: 480px) {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+}

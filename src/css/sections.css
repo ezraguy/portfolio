@@ -206,4 +206,11 @@
   margin-top: 50px;
   font-size: 16pt;
 }
+
+@media screen and (max-width: 480px) {
+  [data-aos-delay] {
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
+  }
+}
 /*# sourceMappingURL=sections.css.map */
