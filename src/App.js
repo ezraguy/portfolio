@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './js/header';
-import Sec1 from './js/sec_1'
-import Sec2 from './js/sec_2'
-import Sec3 from './js/sec_3'
-
-import './js/animateHeader';
+import Header from './components/header';
+import Sec1 from './components/sec_1'
+import Sec2 from './components/sec_2'
+import Sec3 from './components/sec_3'
 import Aos from 'aos';
-import './js/hnb'
+import './components/hnb'
 
 function App() {
   Aos.init();
