@@ -129,21 +129,32 @@ $main_font: "Raleway";
 }
 
 #about {
-  overflow-x: hidden;
+  overflow: hidden;
+
   margin: 0px;
   padding: 0px;
   font-family: "Raleway";
-  height: 50vh;
+
   width: 100%;
-  color: #555555;
+  color: #686868;
   font-weight: bold;
-  display: flex;
   justify-content: center;
+
+  .header {
+    margin-top: 10px;
+    font-family: $main_font;
+    font-size: 30pt;
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-decoration: underline;
+    text-decoration-color: #176979;
+  }
 
   .whoMI {
     overflow: hidden;
     width: 100%;
     margin-top: 20px;
+
     display: block;
 
     .firstHeader {
@@ -159,9 +170,44 @@ $main_font: "Raleway";
       font-size: 12pt;
     }
   }
+
+  .values {
+    position: relative;
+    width: 100%;
+    display: flex !important;
+    margin-top: 15px;
+    justify-content: center !important;
+    .card {
+      margin-top: 10px;
+
+      overflow: hidden;
+    }
+    svg {
+      margin-top: 10px;
+      width: 30px;
+      fill: #176979;
+    }
+  }
+
+  .card {
+    border: none;
+    max-height: 290px !important;
+    .card-body {
+      p {
+        font-weight: 100;
+      }
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
+  svg {
+    width: 100px !important;
+  }
 }
 
 #skills {
+  position: relative;
   overflow-x: hidden;
   margin: 0px;
   background-color: #176979;
