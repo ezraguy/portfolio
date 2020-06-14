@@ -32,14 +32,14 @@ function sec_2() {
                         <div className="svgIcon" data-aos="fade-down" data-aos-delay="200"><SpeedSvg /></div>
                         <div className="card-body">
                             <h3 className="text-bold">FAST</h3>
-                            <p className="card-text">The user's time is valuable So the website has to bee fast and with minimal loading time. </p>
+                            <p className="card-text">The user's time is valuable so the website has to be fast and with minimal loading time. </p>
                         </div>
                     </div>
                     <div className="card card col-lg-3  col-sm-12 col-xs-12"  >
                         <div className="svgIcon" data-aos="fade-down" data-aos-delay="300"><AliveSvg /></div>
                         <div className="card-body">
                             <h3 className="text-bold">ALIVE</h3>
-                            <p className="card-text">A website is a living thing. I make sure it looks like it</p>
+                            <p className="card-text">A website is a living thing. I make sure it looks like it.</p>
                         </div>
                     </div>
 
