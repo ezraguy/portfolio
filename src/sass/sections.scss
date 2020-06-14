@@ -1,246 +1,198 @@
-// .section {
-//     height: 100vh !important;
-//     width: 100% !important;
-//     color: white;
-
-// }
-
-$main_font:'Raleway';
-
+$main_font: "Raleway";
 
 .main_header {
-    font-size: 40pt;
-    font-weight: bold;
-    margin-bottom: 50px;
+  font-size: 40pt;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
-
-
-
-
 #home {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway";
+  height: 100vh;
+  width: 100%;
+
+  .leftDiv {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    padding: 0px;
+    align-items: center;
     overflow-x: hidden;
+    background-color: #16697a;
+
+    .content {
+      margin-left: 35px;
+      float: left;
+    }
+
+    .labelAboveTitle {
+      margin-top: 15px;
+      background-color: #82c0cc;
+      width: 150px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+
+    .firstMainHeader {
+      float: left;
+      font-size: 25pt;
+      color: white;
+      font-weight: bold;
+    }
+
+    .underTitleTxt {
+      padding: 0;
+      float: left;
+      color: white;
+      font-size: 13pt;
+
+      p {
+        text-align: left;
+        width: calc(100% - 100px);
+      }
+    }
+  }
+
+  .rightDiv {
+    overflow-x: hidden;
+    background-color: #ffffff;
+    float: right;
     margin: 0px;
     padding: 0px;
-    font-family: 'Raleway';
-    height: 100vh;
-    width: 100%;
+    background-image: url("../images/profile_3.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+  }
 
+  .aboutMeBtn {
+    padding-top: 16px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: #82c0cc solid 1px;
+    color: white;
+    justify-content: center;
+    height: 60px;
+    width: 150px;
+    font-weight: 700;
+    border-radius: 50px;
+    float: left;
+    transition: 0.3s ease;
 
-
-    .leftDiv {
-
-
-        width: 100%;
-        margin: 0px;
-        display: flex;
-        padding: 0px;
-        align-items: center;
-        overflow-x: hidden;
-        background-color: #16697A;
-
-
-        .content {
-
-            margin-left: 35px;
-            float: left;
-
-        }
-
-        .labelAboveTitle {
-            margin-top: 15px;
-            background-color: #82C0CC;
-            width: 150px;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-        }
-
-        .firstMainHeader {
-            float: left;
-            font-size: 25pt;
-            color: white;
-            font-weight: bold;
-
-
-
-        }
-
-        .underTitleTxt {
-            padding: 0;
-            float: left;
-            color: white;
-            font-size: 13pt;
-
-            p {
-                text-align: left;
-                width: calc(100% - 100px);
-            }
-
-        }
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 
+  .letsTalk {
+    padding-top: 16px;
+    margin-right: 5px;
+    background-color: #ffffff;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    height: 60px;
+    width: 150px;
+    font-weight: 700;
+    border-radius: 50px;
+    float: left;
+    transition: 0.3s ease;
 
-
-
-    .rightDiv {
-        overflow-x: hidden;
-        background-color: #FFFFFF;
-        float: right;
-        margin: 0px;
-        padding: 0px;
-        background-image: url('../images/profile_3.jpg');
-        background-position: center;
-        background-size: cover;
-        opacity: .6;
+    &:hover {
+      transform: translateY(-5px);
     }
+  }
 
+  .sideIcons {
+    position: absolute;
+    float: left;
+    bottom: 15px;
+    height: 90px;
+    width: 50px;
+    padding: 0;
+    margin-left: 0px !important;
 
-    .aboutMeBtn {
-        padding-top: 16px;
-        margin-right: 5px;
-        background-color: transparent;
-        border: #82C0CC solid 1px;
-        color: white;
-        justify-content: center;
-        height: 60px;
-        width: 150px;
-        font-weight: 700;
-        border-radius: 50px;
-        float: left;
-        transition: 0.3s ease;
+    svg {
+      margin-top: 10px;
+      width: 30px;
+      fill: white;
+      cursor: pointer;
+      transition: 0.3s ease;
 
-        &:hover {
-            transform: translateY(-5px);
-        }
-
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
-
-    .letsTalk {
-        padding-top: 16px;
-        margin-right: 5px;
-        background-color: #FFFFFF;
-        color: rgb(85, 85, 85);
-        text-align: center;
-        height: 60px;
-        width: 150px;
-        font-weight: 700;
-        border-radius: 50px;
-        float: left;
-        transition: 0.3s ease;
-
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-
-    .sideIcons {
-
-        position: absolute;
-        float: left;
-        bottom: 15px;
-        height: 90px;
-        width: 50px;
-        padding: 0;
-        margin-left: 0px !important;
-
-        svg {
-            margin-top: 10px;
-            width: 30px;
-            fill: white;
-            cursor: pointer;
-            transition: .3s ease;
-
-            &:hover {
-                transform: translateY(-5px);
-            }
-        }
-
-    }
-
+  }
 }
 
 #about {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Raleway';
-    height: 50vh;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway";
+  height: 50vh;
+  width: 100%;
+  color: #555555;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+
+  .whoMI {
+    overflow: hidden;
     width: 100%;
-    color: #555555;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+    display: block;
 
-
-
-    .whoMI {
-        overflow: hidden;
-        width: 100%;
-        margin-top: 20px;
-        display: block;
-
-        .firstHeader {
-
-            font-family: $main_font;
-            font-size: 30pt;
-            font-weight: bold;
-        }
-
-        .textUnderHeader {
-            text-align: center;
-
-            font-family: $main_font;
-            font-size: 12pt;
-
-
-        }
+    .firstHeader {
+      font-family: $main_font;
+      font-size: 30pt;
+      font-weight: bold;
     }
 
+    .textUnderHeader {
+      text-align: center;
 
-
-
-
-
-
+      font-family: $main_font;
+      font-size: 12pt;
+    }
+  }
 }
 
 #skills {
-    overflow-x: hidden;
-    margin: 0px;
-    background-color: #176979;
-    padding: 0px;
+  overflow-x: hidden;
+  margin: 0px;
+  background-color: #176979;
+  padding: 0px;
+  font-family: $main_font;
+  height: 80vh;
+  margin-top: 50px;
+  font-size: 16pt;
+  color: white;
+
+  h3 {
     font-family: $main_font;
-    height: 80vh;
-    margin-top: 50px;
-    font-size: 16pt;
-    color: white;
-
-    h3 {
-        font-family: $main_font;
-        font-size: 30pt;
-        font-weight: bold;
-        padding-top: 10px;
-    }
-
-
+    font-size: 30pt;
+    font-weight: bold;
+    padding-top: 10px;
+  }
 }
 
-
 #contact {
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    font-family: $main_font;
-    height: 50vh;
-    margin-top: 50px;
-    font-size: 16pt;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: $main_font;
+  height: 50vh;
+  margin-top: 50px;
+  font-size: 16pt;
 }
 
 // disabling animation delay on mobile
 @media screen and (max-width: 480px) {
-    [data-aos-delay] {
-        transition-delay: 0s !important;
-    }
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
 }

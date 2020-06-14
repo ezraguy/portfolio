@@ -8,7 +8,7 @@
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   height: 100vh;
   width: 100%;
 }
@@ -24,7 +24,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
-  background-color: #16697A;
+  background-color: #16697a;
 }
 
 #home .leftDiv .content {
@@ -34,7 +34,7 @@
 
 #home .leftDiv .labelAboveTitle {
   margin-top: 15px;
-  background-color: #82C0CC;
+  background-color: #82c0cc;
   width: 150px;
   font-weight: bold;
   color: white;
@@ -61,21 +61,21 @@
 
 #home .rightDiv {
   overflow-x: hidden;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   float: right;
   margin: 0px;
   padding: 0px;
   background-image: url("../images/profile_3.jpg");
   background-position: center;
   background-size: cover;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #home .aboutMeBtn {
   padding-top: 16px;
   margin-right: 5px;
   background-color: transparent;
-  border: #82C0CC solid 1px;
+  border: #82c0cc solid 1px;
   color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -97,7 +97,7 @@
 #home .letsTalk {
   padding-top: 16px;
   margin-right: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #555555;
   text-align: center;
   height: 60px;
@@ -129,8 +129,8 @@
   width: 30px;
   fill: white;
   cursor: pointer;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 #home .sideIcons svg:hover {
@@ -142,7 +142,7 @@
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   height: 50vh;
   width: 100%;
   color: #555555;
@@ -153,9 +153,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #about .whoMI {
