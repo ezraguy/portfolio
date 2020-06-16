@@ -6,6 +6,24 @@ $main_font: "Raleway";
   margin-bottom: 50px;
 }
 
+.underLineDark {
+  background-image: linear-gradient(to right, #82c0cc, #82c0cc);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100px 5px;
+  transition: 1s ease all;
+  height: 10px;
+}
+
+.underLineLight {
+  background-image: linear-gradient(to right, white, white);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100px 5px;
+  transition: 1s ease all;
+  height: 10px;
+}
+
 #home {
   overflow-x: hidden;
   margin: 0px;
@@ -146,8 +164,6 @@ $main_font: "Raleway";
     font-size: 30pt;
     font-weight: bold;
     transition: 0.3s ease;
-    text-decoration: underline;
-    text-decoration-color: #176979;
   }
 
   .whoMI {
@@ -161,6 +177,8 @@ $main_font: "Raleway";
       font-family: $main_font;
       font-size: 30pt;
       font-weight: bold;
+      margin: 0;
+      padding: 0;
     }
 
     .textUnderHeader {
@@ -213,7 +231,7 @@ $main_font: "Raleway";
   background-color: #176979;
   padding: 0px;
   font-family: $main_font;
-  height: 80vh;
+
   margin-top: 50px;
   font-size: 16pt;
   color: white;
@@ -223,6 +241,19 @@ $main_font: "Raleway";
     font-size: 30pt;
     font-weight: bold;
     padding-top: 10px;
+  }
+
+  .card {
+    width: 90px;
+    height: 350px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 2%;
+    margin-right: 5px;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: end;
   }
 }
 

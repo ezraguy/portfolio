@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../css/header.css';
 
-function header() {
-    return (
 
-        <nav id="header" className="navbar navbar-expand-lg navbar-dark header">
 
+class header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
+
+
+    render() {
+        return (<nav id="header" className="navbar navbar-expand-lg navbar-dark header">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon "></span>
             </button>
@@ -29,8 +35,14 @@ function header() {
                 </ul>
             </div>
             <span className="logo" >GUYEZRA</span>
-        </nav>
-    );
+        </nav>);
+    }
 }
 
 export default header;
+
+
+
+
+
+

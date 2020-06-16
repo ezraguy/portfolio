@@ -4,6 +4,28 @@
   margin-bottom: 50px;
 }
 
+.underLineDark {
+  background-image: -webkit-gradient(linear, left top, right top, from(#82c0cc), to(#82c0cc));
+  background-image: linear-gradient(to right, #82c0cc, #82c0cc);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100px 5px;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  height: 10px;
+}
+
+.underLineLight {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background-image: linear-gradient(to right, white, white);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100px 5px;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  height: 10px;
+}
+
 #home {
   overflow-x: hidden;
   margin: 0px;
@@ -158,9 +180,6 @@
   font-weight: bold;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #176979;
-          text-decoration-color: #176979;
 }
 
 #about .whoMI {
@@ -174,6 +193,8 @@
   font-family: "Raleway";
   font-size: 30pt;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 #about .whoMI .textUnderHeader {
@@ -229,7 +250,6 @@
   background-color: #176979;
   padding: 0px;
   font-family: "Raleway";
-  height: 80vh;
   margin-top: 50px;
   font-size: 16pt;
   color: white;
@@ -240,6 +260,23 @@
   font-size: 30pt;
   font-weight: bold;
   padding-top: 10px;
+}
+
+#skills .card {
+  width: 90px;
+  height: 350px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 2%;
+  margin-right: 5px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 #contact {

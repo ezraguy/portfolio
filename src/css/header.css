@@ -1,6 +1,6 @@
 #header {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   background-color: transparent;
   color: white;
   height: 40px;
@@ -19,16 +19,22 @@
 }
 
 #header a {
+  background-color: transparent;
+  border: none;
   padding-left: 35px;
   padding-right: 35px;
   text-decoration: none !important;
   color: white;
-  -webkit-transition: ease .2s;
-  transition: ease .2s;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
 #header a:hover {
   font-weight: 700;
+}
+
+#header a:focus {
+  outline: none;
 }
 
 #header .logo {
