@@ -18,7 +18,7 @@ class projectCard extends Component {
                 name: 'Item title',
             },
             {
-                id: 1,
+                id: 4,
                 name: 'Item title',
             },
 
