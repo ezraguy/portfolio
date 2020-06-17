@@ -253,7 +253,6 @@ $main_font: "Raleway";
     color: black;
     display: flex;
     text-align: center;
-    justify-content: end;
   }
 }
 
@@ -268,7 +267,7 @@ $main_font: "Raleway";
 }
 
 // disabling animation delay on mobile
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
   [data-aos-delay] {
     transition-delay: 0s !important;
   }

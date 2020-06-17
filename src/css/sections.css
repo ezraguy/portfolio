@@ -274,9 +274,6 @@
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
 #contact {
@@ -289,7 +286,7 @@
   font-size: 16pt;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
   [data-aos-delay] {
     -webkit-transition-delay: 0s !important;
             transition-delay: 0s !important;
