@@ -12,6 +12,7 @@ class header extends Component {
         this.state = {}
     }
 
+
     openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById('root').style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -21,10 +22,24 @@ class header extends Component {
         document.getElementById("mySidenav").style.width = "0px";
 
     }
+    componentDidMount() {
+        this.prev = window.scrollY;
+        window.addEventListener('scroll', e => this.handleNavigation(e));
+    }
+    handleNavigation = (e) => {
+        const window = e.currentTarget;
+        if (this.prev > window.scrollY) {
+            document.getElementById('navTogglerBtn').style.opacity = '1';
+        } else if (this.prev < window.scrollY) {
+            document.getElementById('navTogglerBtn').style.opacity = '0';
+
+        }
+        this.prev = window.scrollY;
+    };
     render() {
         return (
             <nav id="header" className="navbar navbar-expand-lg navbar-light header">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" onClick={this.openNav} aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="navTogglerBtn" className="navbar-toggler" type="button" data-toggle="collapse" onClick={this.openNav} aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">

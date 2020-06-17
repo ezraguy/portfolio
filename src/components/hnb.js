@@ -10,8 +10,6 @@ window.addEventListener("click", function () {
 
 
 document.addEventListener("scroll", function () {
-
-
     if (window.pageYOffset > 150) {
 
         document.getElementById("topBtn").style.opacity = 1;

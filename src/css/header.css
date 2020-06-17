@@ -46,6 +46,15 @@
   color: white;
 }
 
+#header #navTogglerBtn {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#header #navTogglerBtn:focus {
+  outline: none;
+}
+
 .navbar-collapse {
   position: absolute;
   top: 5px;
