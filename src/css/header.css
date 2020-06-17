@@ -86,7 +86,7 @@ li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffa72be5;
+  background-color: #ffa72bf5;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -129,7 +129,7 @@ li {
 .sidenav .closeBtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 5px;
   font-size: 36px;
   margin-left: 50px;
   background-color: transparent;
