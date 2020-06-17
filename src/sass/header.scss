@@ -12,21 +12,23 @@
   top: 0px;
   width: 100%;
 
-  a {
-    background-color: transparent;
-    border: none;
-    padding-left: 35px;
-    padding-right: 35px;
-    text-decoration: none !important;
-    color: white;
-    transition: ease 0.2s;
+  .nav-item {
+    a {
+      background-color: transparent;
+      border: none;
+      padding-left: 35px;
+      padding-right: 35px;
+      text-decoration: none !important;
+      color: white;
+      transition: ease 0.3s;
 
-    &:hover {
-      font-weight: 700;
-    }
+      &:hover {
+        font-weight: 700;
+      }
 
-    &:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -51,8 +53,9 @@ li {
 }
 
 .navbar-toggler {
+  position: fixed;
   margin-top: 9px;
-  background-color: rgba(14, 14, 14, 0.899);
+  background-color: rgb(250, 247, 247);
 }
 
 @media screen and (max-width: 992px) {
@@ -70,4 +73,70 @@ li {
 
 .sec_2_header {
   color: black;
+}
+
+.sidenav {
+  text-align: left;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffa72be5;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  .sideIconsInSideNav {
+    position: absolute;
+    float: left;
+    bottom: 0px;
+    height: 60px;
+    width: inherit;
+    svg {
+      width: 30px !important;
+      fill: white;
+      cursor: pointer;
+    }
+    a {
+      display: inline;
+      padding: 5px !important;
+    }
+  }
+
+  .nav-item {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    transition: 1s ease;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }

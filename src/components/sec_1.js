@@ -25,15 +25,13 @@ function sec_1() {
                     <div data-aos="fade-right" data-aos-delay="400"  >
                         <a href="#about" className="aboutMeBtn btn ">ABOUT ME</a>
                         <a href="#contact" className="letsTalk btn ">LET'S CHAT</a>
+
                     </div>
                 </div >
                 <div className="sideIcons" >
                     <a href="https://github.com/ezraguy" target="_blank" rel="noopener noreferrer" ><GitSvg data-aos="fade-left"
                     /></a>
                     <a href="https://www.linkedin.com/in/guyezra" target="_blank" rel="noopener noreferrer"><LinkedInSvg data-aos="fade-right" /></a>
-
-
-
                 </div>
                 <ScrollTopBtn />
             </div>
