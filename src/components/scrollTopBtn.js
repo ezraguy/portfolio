@@ -1,26 +1,35 @@
-import React, { Component } from 'react';
+import React, { useRef, useEffect } from 'react';
 import $ from 'jquery';
 
 
 
-class ScrollTopBtn extends Component {
-    constructor() {
-        super();
+function ScrollTopBtn() {
 
-        this.onclick = this.onclick.bind(this);
-    }
+    const scrollUpBtn = useRef();
 
-    render() {
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 150) {
 
-        return (
-            <button id="topBtn" onClick={this.onclick} className="topBtn"><img alt="arrow" src={require('../images/arrow-up.svg')}></img></button>
-        );
-    }
+                scrollUpBtn.current.style.opacity = 1;
+            }
+            else
+                scrollUpBtn.current.style.opacity = 0;
+        });
 
-    onclick() {
+    })
+
+    const scrollUp = () => {
         $("html, body").animate({ scrollTop: 0 }, 500);
 
     }
+
+    return (
+        <button id="topBtn" ref={scrollUpBtn} onClick={() => scrollUp()} className="topBtn"><img alt="arrow" src={require('../images/arrow-up.svg')}></img></button>
+    );
+
+
+
 }
 
 export default ScrollTopBtn;

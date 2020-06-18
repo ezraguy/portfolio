@@ -5,7 +5,6 @@ import Sec1 from './components/sec_1'
 import Sec2 from './components/sec_2'
 import Sec3 from './components/sec_3'
 import Aos from 'aos';
-import './components/hnb'
 
 function App() {
   Aos.init();
