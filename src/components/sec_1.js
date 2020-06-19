@@ -13,7 +13,7 @@ function sec_1() {
 
     return (
         <div id="home" className="row container-fluid">
-            <div className="leftDiv   col-sm-6 container " >
+            <div className="leftDiv lg-col-6 col-md-6 col-sm-12 container " >
                 <div className="content">
                     <div data-aos="fade-right" data-aos-delay="100" className="labelAboveTitle"> Hey, i'm Guy Ezra</div>
                     <div data-aos="fade-right" data-aos-delay="200" className="firstMainHeader">Front End Developer</div>
@@ -35,7 +35,7 @@ function sec_1() {
                 </div>
                 <ScrollTopBtn />
             </div>
-            <div className="rightDiv container  col-sm-6">
+            <div className="rightDiv container lg-col-6 col-md-6 col-sm-12">
             </div>
 
         </div>
