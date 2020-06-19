@@ -17,7 +17,7 @@ function sec_1() {
                 <div className="content">
                     <div data-aos="fade-right" data-aos-delay="100" className="labelAboveTitle"> Hey, i'm Guy Ezra</div>
                     <div data-aos="fade-right" data-aos-delay="200" className="firstMainHeader">Front End Developer</div>
-                    <div data-aos="fade-right" data-aos-delay="300" className="underTitleTxt container ">
+                    <div data-aos="fade-right" data-aos-delay="300" className="underTitleTxt container-fluid ">
                         <p >
                             My biggest passion is to make a website come to life.
                         </p>
