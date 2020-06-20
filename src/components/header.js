@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import '../css/header.css';
 import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
 import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
@@ -8,8 +8,6 @@ function Header() {
 
     const sideNav = useRef();
     const sideNavToggle = useRef();
-
-
 
 
     const openNav = () => {
