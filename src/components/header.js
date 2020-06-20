@@ -8,12 +8,9 @@ function Header() {
 
     const sideNav = useRef();
     const sideNavToggle = useRef();
-    let prev = window.scrollY;;
 
-    useEffect(() => {
-        window.addEventListener('scroll', e => handleNavigation(e));
 
-    })
+
 
     const openNav = () => {
         sideNav.current.style.width = "250px";
@@ -21,20 +18,6 @@ function Header() {
     const closeNav = () => {
         sideNav.current.style.width = "0px";
     }
-    const handleNavigation = (e) => {
-        const window = e.currentTarget;
-        if (prev > window.scrollY) {
-            sideNavToggle.current.style.opacity = '1';
-        } else if (prev < window.scrollY) {
-            sideNavToggle.current.style.opacity = '0';
-
-        }
-        prev = window.scrollY;
-    }
-
-
-
-
 
 
     return (

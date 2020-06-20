@@ -47,6 +47,8 @@
 }
 
 #header #navTogglerBtn {
+  position: -webkit-sticky;
+  position: sticky;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
