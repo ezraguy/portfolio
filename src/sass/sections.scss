@@ -257,13 +257,93 @@ $main_font: "Raleway";
 }
 
 #contact {
+  background-color: #292e3a;
   overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
   font-family: $main_font;
-  height: 50vh;
-  margin-top: 50px;
+  height: 70vh;
+
   font-size: 16pt;
+
+  h3 {
+    padding-top: 10px;
+    color: white;
+    font-family: $main_font;
+    font-size: 30pt;
+    font-weight: bold;
+  }
+  form {
+    padding-top: 30px;
+    font-family: $main_font;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    textArea {
+      background-color: #2f3441;
+      width: 450px;
+      color: white;
+    }
+    input,
+    textArea {
+      border-style: hidden;
+      background-color: #2f3441;
+      width: 450px;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    span {
+      font-size: 17px;
+    }
+    svg {
+      height: 55px;
+      width: 150px;
+      fill: none;
+      stroke-width: 5;
+      .o1 {
+        stroke: #FFA62B(255, 179, 65, 0.7);
+        fill: #ffa62b;
+        transition: all 1s ease-in-out;
+      }
+      .o2 {
+        stroke: white;
+        stroke-dasharray: 20 420;
+        stroke-dashoffset: 20;
+        transition: all 1s ease-in-out;
+      }
+    }
+    span {
+      position: absolute;
+      margin: auto 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    &:hover {
+      .o1 {
+        fill: #ffa62b;
+      }
+      .o2 {
+        stroke-dashoffset: -420;
+      }
+    }
+  }
+
+  ::placeholder {
+    color: white;
+  }
 }
 
 // disabling animation delay on mobile

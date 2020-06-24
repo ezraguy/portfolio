@@ -4,6 +4,7 @@ import Header from './components/header';
 import Sec1 from './components/sec_1'
 import Sec2 from './components/sec_2'
 import Sec3 from './components/sec_3'
+import Sec4 from './components/sec_4'
 import Aos from 'aos';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Sec1 />
       <Sec2 />
       <Sec3 />
-
+      <Sec4 />
 
     </div>
 

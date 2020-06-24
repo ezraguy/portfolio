@@ -277,13 +277,126 @@
 }
 
 #contact {
+  background-color: #292e3a;
   overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
   font-family: "Raleway";
-  height: 50vh;
-  margin-top: 50px;
+  height: 70vh;
   font-size: 16pt;
+}
+
+#contact h3 {
+  padding-top: 10px;
+  color: white;
+  font-family: "Raleway";
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+#contact form {
+  padding-top: 30px;
+  font-family: "Raleway";
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact form textArea {
+  background-color: #2f3441;
+  width: 450px;
+  color: white;
+}
+
+#contact form input,
+#contact form textArea {
+  border-style: hidden;
+  background-color: #2f3441;
+  width: 450px;
+  color: white;
+}
+
+#contact form input:focus,
+#contact form textArea:focus {
+  outline: none;
+}
+
+#contact .button {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#contact .button span {
+  font-size: 17px;
+}
+
+#contact .button svg {
+  height: 55px;
+  width: 150px;
+  fill: none;
+  stroke-width: 5;
+}
+
+#contact .button svg .o1 {
+  stroke: #FFA62B 255, 179, 65, 0.7;
+  fill: #ffa62b;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#contact .button svg .o2 {
+  stroke: white;
+  stroke-dasharray: 20 420;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#contact .button span {
+  position: absolute;
+  margin: auto 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#contact .button:hover .o1 {
+  fill: #ffa62b;
+}
+
+#contact .button:hover .o2 {
+  stroke-dashoffset: -420;
+}
+
+#contact ::-webkit-input-placeholder {
+  color: white;
+}
+
+#contact :-ms-input-placeholder {
+  color: white;
+}
+
+#contact ::-ms-input-placeholder {
+  color: white;
+}
+
+#contact ::placeholder {
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {
