@@ -24,7 +24,7 @@ function sec_1() {
                     </div>
                     <div data-aos="fade-right" data-aos-delay="400"  >
                         <a href="#about" className="aboutMeBtn btn ">ABOUT ME</a>
-                        <a href="#contact" className="letsTalk btn ">LET'S CHAT</a>
+                        <a href="#contactMe" className="letsTalk btn ">LET'S CHAT</a>
 
                     </div>
                 </div >
