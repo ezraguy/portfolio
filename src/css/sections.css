@@ -276,7 +276,7 @@
   text-align: center;
 }
 
-#contact {
+#contactMe {
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: "Raleway";
@@ -284,7 +284,7 @@
   font-size: 16pt;
 }
 
-#contact h3 {
+#contactMe h3 {
   padding-top: 10px;
   color: white;
   font-family: "Raleway";
@@ -292,7 +292,7 @@
   font-weight: bold;
 }
 
-#contact form {
+#contactMe form {
   padding-top: 30px;
   font-family: "Raleway";
   height: 500px;
@@ -308,20 +308,20 @@
           flex-direction: column;
 }
 
-#contact form input,
-#contact form textArea {
+#contactMe form input,
+#contactMe form textArea {
   border-style: hidden;
   background-color: #383e4d;
   width: 350px;
   color: white;
 }
 
-#contact form input:focus,
-#contact form textArea:focus {
+#contactMe form input:focus,
+#contactMe form textArea:focus {
   outline: none;
 }
 
-#contact .submitButton {
+#contactMe .submitButton {
   background-color: #ffa62b;
   border: none;
   margin-top: 10px;
@@ -332,24 +332,24 @@
   z-index: 2;
 }
 
-#contact .submitButton:hover {
+#contactMe .submitButton:hover {
   -webkit-box-shadow: 0 0 11px #ffa62b;
           box-shadow: 0 0 11px #ffa62b;
 }
 
-#contact ::-webkit-input-placeholder {
+#contactMe ::-webkit-input-placeholder {
   color: white;
 }
 
-#contact :-ms-input-placeholder {
+#contactMe :-ms-input-placeholder {
   color: white;
 }
 
-#contact ::-ms-input-placeholder {
+#contactMe ::-ms-input-placeholder {
   color: white;
 }
 
-#contact ::placeholder {
+#contactMe ::placeholder {
   color: white;
 }
 

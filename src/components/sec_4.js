@@ -9,7 +9,7 @@ function Sec_4() {
 
 
 
-        <div id="contact" className="container-fluid">
+        <div id="contactMe" className="container-fluid">
             {/* A little help for the Netlify bots if you're not using a SSG*/}
 
 
