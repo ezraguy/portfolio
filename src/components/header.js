@@ -49,7 +49,7 @@ function Header() {
                 <a href="#home" className="nav-item" onClick={() => closeNav()}>HOME</a>
                 <a href="#about" className="nav-item" onClick={() => closeNav()}>ABOUT</a>
                 <a href="#skills" className="nav-item" onClick={() => closeNav()}>SKILLS</a>
-                <a href="#contact" className="nav-item" onClick={() => closeNav()}>CONTACT</a>
+                <a href="#contactMe" className="nav-item" onClick={() => closeNav()}>CONTACT</a>
 
                 <div className="sideIconsInSideNav" >
                     <a href="https://github.com/ezraguy" target="_blank" rel="noopener noreferrer" ><GitSvg data-aos="fade-left"
