@@ -295,7 +295,7 @@
 #contact form {
   padding-top: 30px;
   font-family: "Raleway";
-  height: 400px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,8 +311,8 @@
 #contact form input,
 #contact form textArea {
   border-style: hidden;
-  background-color: #2f3441;
-  min-width: 350px;
+  background-color: #383e4d;
+  width: 350px;
   color: white;
 }
 
@@ -321,60 +321,20 @@
   outline: none;
 }
 
-#contact .button {
+#contact .submitButton {
+  background-color: #ffa62b;
+  border: none;
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  margin-bottom: 15px;
+  width: 100px;
+  height: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 2;
 }
 
-#contact .button span {
-  font-size: 17px;
-}
-
-#contact .button svg {
-  height: 55px;
-  width: 150px;
-  fill: none;
-  stroke-width: 5;
-}
-
-#contact .button svg .o1 {
-  stroke: #FFA62B 255, 179, 65, 0.7;
-  fill: #ffa62b;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-#contact .button svg .o2 {
-  stroke: white;
-  stroke-dasharray: 20 420;
-  stroke-dashoffset: 20;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-#contact .button span {
-  position: absolute;
-  margin: auto 0;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-#contact .button:hover .o1 {
-  fill: #ffa62b;
-}
-
-#contact .button:hover .o2 {
-  stroke-dashoffset: -420;
+#contact .submitButton:hover {
+  -webkit-box-shadow: 0 0 11px #ffa62b;
+          box-shadow: 0 0 11px #ffa62b;
 }
 
 #contact ::-webkit-input-placeholder {
