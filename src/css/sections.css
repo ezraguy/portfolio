@@ -280,7 +280,7 @@
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: "Raleway";
-  height: 70vh;
+  height: 75vh;
   font-size: 16pt;
 }
 
@@ -295,7 +295,6 @@
 #contactMe form {
   padding-top: 30px;
   font-family: "Raleway";
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -260,7 +260,7 @@ $main_font: "Raleway";
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: $main_font;
-  height: 70vh;
+  height: 75vh;
   font-size: 16pt;
 
   h3 {
@@ -273,7 +273,7 @@ $main_font: "Raleway";
   form {
     padding-top: 30px;
     font-family: $main_font;
-    height: 500px;
+
     display: flex;
     align-items: center;
     flex-direction: column;
