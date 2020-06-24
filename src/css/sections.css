@@ -308,17 +308,11 @@
           flex-direction: column;
 }
 
-#contact form textArea {
-  background-color: #2f3441;
-  width: 450px;
-  color: white;
-}
-
 #contact form input,
 #contact form textArea {
   border-style: hidden;
   background-color: #2f3441;
-  width: 450px;
+  min-width: 350px;
   color: white;
 }
 
