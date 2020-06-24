@@ -10,6 +10,13 @@ function Sec_4() {
 
 
         <div id="contact" className="container-fluid">
+            {/* A little help for the Netlify bots if you're not using a SSG*/}
+
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <textarea name="message"></textarea>
+            </form>
             <h3>Let's Chat </h3>
             <div data-aos="fade-left" className="underLineLight" >&nbsp;</div>
             <div className="container" >
