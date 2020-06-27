@@ -228,11 +228,11 @@ $main_font: "Raleway";
   position: relative;
   overflow-x: hidden;
   margin: 0px;
-  background-color: #176979;
+  background-color: #104e5b;
   padding: 0px;
   font-family: $main_font;
-
   margin-top: 50px;
+
   font-size: 16pt;
   color: white;
 
@@ -250,9 +250,14 @@ $main_font: "Raleway";
     background-color: white;
     border-radius: 2%;
     margin-right: 5px;
+    margin-bottom: 50px;
     color: black;
     display: flex;
     text-align: center;
+  }
+  .projects {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -260,7 +265,7 @@ $main_font: "Raleway";
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: $main_font;
-  height: 75vh;
+  height: 65vh;
   font-size: 16pt;
 
   h3 {
@@ -273,7 +278,6 @@ $main_font: "Raleway";
   form {
     padding-top: 30px;
     font-family: $main_font;
-
     display: flex;
     align-items: center;
     flex-direction: column;

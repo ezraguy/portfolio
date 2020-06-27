@@ -1,0 +1,57 @@
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffa72bcf;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay svg {
+  margin-top: 10px;
+  width: 30px;
+  fill: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.projectCard {
+  font-family: "Raleway";
+  font-weight: 700;
+  height: 350px;
+  border: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0px;
+}
+
+.projectCard:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*# sourceMappingURL=projectCard.css.map */

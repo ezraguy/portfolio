@@ -18,9 +18,9 @@ function Sec_4() {
             <div className="container" >
                 <form name="contact" method="post" >
                     <input type="hidden" name="form-name" value="contact" />
-                    <input className="mb-4" required placeholder="Name" name="name" id="name" type="text" />
-                    <input className="mb-4" required type="email" placeholder="Email" name="email" id="email" />
-                    <textarea required name="message" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
+                    <input className="mb-4 pl-2" required placeholder="Name" name="name" id="name" type="text" />
+                    <input className="mb-4 pl-2" required type="email" placeholder="Email" name="email" id="email" />
+                    <textarea required name="message" className="pl-2" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
                     <button type="submit" className="submitButton btn">
                         Submit
                     </button>
