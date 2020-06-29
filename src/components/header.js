@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import '../css/header.css';
 import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
 import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
-
+import $ from "jquery";
 
 function Header() {
 
@@ -18,6 +18,16 @@ function Header() {
     }
 
 
+    const scrollToDiv = (e) => {
+        let div = `#${e.target.value}`;
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(div).offset().top
+        }, 100);
+        closeNav();
+    }
+
+
+
     return (
         <nav id="header" className="navbar navbar-expand-lg navbar-light header">
             <button id="navTogglerBtn" ref={sideNavToggle} className="navbar-toggler" type="button" data-toggle="collapse" onClick={() => openNav()} aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,17 +37,17 @@ function Header() {
                 <ul className="navbar-nav ">
 
                     <li className="nav-item ">
-                        <a className="nav-link" href="#home">HOME</a>
+                        <button className="nav-link" value="home" onClick={scrollToDiv}>HOME</button>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#about">ABOUT</a>
+                        <button className="nav-link" value="about" onClick={scrollToDiv}>ABOUT</button>
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link" href="#skills">SKILLS</a>
+                        <button className="nav-link" value="skills" onClick={scrollToDiv}>SKILLS</button>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#contactMe">CONTACT</a>
+                        <button className="nav-link" value="contactMe" onClick={scrollToDiv}>CONTACT</button>
                     </li>
 
                 </ul>
@@ -45,11 +55,11 @@ function Header() {
 
             {/* Side nav */}
             <div id="mySidenav" ref={sideNav} className="sidenav">
-                <button className="closeBtn" onClick={() => closeNav()}>&times;</button>
-                <a href="#home" className="nav-item" onClick={() => closeNav()}>HOME</a>
-                <a href="#about" className="nav-item" onClick={() => closeNav()}>ABOUT</a>
-                <a href="#skills" className="nav-item" onClick={() => closeNav()}>SKILLS</a>
-                <a href="#contactMe" className="nav-item" onClick={() => closeNav()}>CONTACT</a>
+                <button className="closeBtn" onClick={closeNav}>&times;</button>
+                <button className="nav-item" value="home" onClick={scrollToDiv}>HOME</button>
+                <button className="nav-item" value="about" onClick={scrollToDiv}>ABOUT</button>
+                <button className="nav-item" value="skills" onClick={scrollToDiv}>SKILLS</button>
+                <button className="nav-item" value="contactMe" onClick={scrollToDiv}>CONTACT</button>
 
                 <div className="sideIconsInSideNav" >
                     <a href="https://github.com/ezraguy" target="_blank" rel="noopener noreferrer" ><GitSvg data-aos="fade-left"

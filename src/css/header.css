@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-#header .nav-item a {
+#header .nav-item button {
   background-color: transparent;
   border: none;
   padding-left: 35px;
@@ -29,11 +29,11 @@
   transition: ease 0.3s;
 }
 
-#header .nav-item a:hover {
+#header .nav-item button:hover {
   font-weight: 700;
 }
 
-#header .nav-item a:focus {
+#header .nav-item button:focus {
   outline: none;
 }
 
@@ -102,6 +102,25 @@ li {
   padding-top: 60px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.sidenav button {
+  background-color: transparent;
+  border: none;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-decoration: none !important;
+  color: white;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.sidenav button:hover {
+  font-weight: 700;
+}
+
+.sidenav button:focus {
+  outline: none;
 }
 
 .sidenav .sideIconsInSideNav {
