@@ -22,13 +22,10 @@ class ScrollTopBtn extends Component {
 
             }
         });
-
-
     }
 
     scrollUp = () => {
         $("html, body").animate({ scrollTop: 0 }, 500);
-
     }
     render() {
         return (<button id="topBtn" disabled={this.state.dis} style={{ opacity: this.state.opacity }} onClick={() => this.scrollUp()} className="topBtn"><img alt="arrow" src={require('../images/arrow-up.svg')}></img></button>);

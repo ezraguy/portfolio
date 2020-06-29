@@ -22,7 +22,7 @@ function Header() {
         let div = `#${e.target.value}`;
         $([document.documentElement, document.body]).animate({
             scrollTop: $(div).offset().top
-        }, 1000);
+        }, 'slow');
         closeNav();
     }
 
