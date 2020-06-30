@@ -87,7 +87,6 @@ $main_font: "Raleway";
   }
 
   .aboutMeBtn {
-    padding-top: 16px;
     margin-right: 5px;
     background-color: transparent;
     border: #82c0cc solid 1px;
@@ -106,7 +105,6 @@ $main_font: "Raleway";
   }
 
   .letsTalk {
-    padding-top: 16px;
     margin-right: 5px;
     background-color: #ffffff;
     color: rgb(85, 85, 85);
@@ -265,8 +263,8 @@ $main_font: "Raleway";
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: $main_font;
-  height: 72vh;
   font-size: 16pt;
+  padding-bottom: 50px;
 
   h3 {
     padding-top: 10px;

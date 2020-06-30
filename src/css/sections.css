@@ -94,7 +94,6 @@
 }
 
 #home .aboutMeBtn {
-  padding-top: 16px;
   margin-right: 5px;
   background-color: transparent;
   border: #82c0cc solid 1px;
@@ -117,7 +116,6 @@
 }
 
 #home .letsTalk {
-  padding-top: 16px;
   margin-right: 5px;
   background-color: #ffffff;
   color: #555555;
@@ -286,8 +284,8 @@
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: "Raleway";
-  height: 72vh;
   font-size: 16pt;
+  padding-bottom: 50px;
 }
 
 #contactMe h3 {

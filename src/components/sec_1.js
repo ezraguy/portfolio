@@ -4,6 +4,7 @@ import '../css/topBtn.css';
 import ScrollTopBtn from './scrollTopBtn'
 import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
 import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
+import $ from 'jquery';
 
 
 
@@ -11,6 +12,14 @@ import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
 function sec_1() {
 
 
+
+
+    const scrollToDiv = (e) => {
+        let div = `#${e.target.value}`;
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(div).offset().top
+        }, 'slow');
+    }
     return (
         <div id="home" className="row container-fluid">
             <div className="leftDiv col-lg-6 col-md-6 col-sm-6 col-xs-12 container " >
@@ -23,8 +32,8 @@ function sec_1() {
                         </p>
                     </div>
                     <div data-aos="fade-right" data-aos-delay="400"  >
-                        <a href="#about" className="aboutMeBtn btn ">ABOUT ME</a>
-                        <a href="#contactMe" className="letsTalk btn ">LET'S CHAT</a>
+                        <button onClick={scrollToDiv} value="about" className="aboutMeBtn btn ">ABOUT ME</button>
+                        <button onClick={scrollToDiv} value="contactMe" className="letsTalk btn ">LET'S CHAT</button>
 
                     </div>
                 </div >
