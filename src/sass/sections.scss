@@ -56,7 +56,7 @@ $main_font: "Raleway";
 
     .firstMainHeader {
       float: left;
-      font-size: 25pt;
+      font-size: 1.5em;
       color: white;
       font-weight: bold;
     }
@@ -93,11 +93,13 @@ $main_font: "Raleway";
     color: white;
     justify-content: center;
     height: 60px;
-    width: 150px;
+    width: 135px;
+    font-size: 1em;
     font-weight: 700;
     border-radius: 50px;
     float: left;
     transition: 0.3s ease;
+    margin-bottom: 5px;
 
     &:hover {
       transform: translateY(-5px);
@@ -110,7 +112,8 @@ $main_font: "Raleway";
     color: rgb(85, 85, 85);
     text-align: center;
     height: 60px;
-    width: 150px;
+    width: 135px;
+    font-size: 1em;
     font-weight: 700;
     border-radius: 50px;
     float: left;
@@ -273,21 +276,22 @@ $main_font: "Raleway";
     font-size: 30pt;
     font-weight: bold;
   }
+
   form {
-    position: relative;
-    margin: 0px 10px 0px 10px;
     padding-top: 30px;
     font-family: $main_font;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-width: 95%;
+    max-width: 600px;
+
     input,
     textArea {
+      margin: 0 auto;
       border-style: hidden;
+      margin-bottom: 10px;
+      width: 85%;
       background-color: #383e4d;
+
       color: white;
-      width: 300px;
+      position: relative;
       &:focus {
         outline: none;
       }
@@ -313,8 +317,8 @@ $main_font: "Raleway";
 
   .checkSvg {
     position: absolute;
-    margin-left: 5px;
     margin-top: 5px;
+    margin-left: 5px;
   }
 }
 
