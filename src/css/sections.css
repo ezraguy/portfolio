@@ -356,6 +356,12 @@
   color: white;
 }
 
+#contactMe .checkSvg {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1000px) {
   [data-aos-delay] {
     -webkit-transition-delay: 0s !important;

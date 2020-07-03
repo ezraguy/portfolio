@@ -308,6 +308,12 @@ $main_font: "Raleway";
   ::placeholder {
     color: white;
   }
+
+  .checkSvg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 }
 
 // disabling animation delay on mobile

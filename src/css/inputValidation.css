@@ -1,0 +1,17 @@
+.inputValid {
+  border: 1px solid #42a948 !important;
+}
+
+.inputNotValid {
+  border: 1px solid red !important;
+}
+
+.errorMessage {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: red;
+  display: inline-block;
+}
+/*# sourceMappingURL=inputValidation.css.map */
