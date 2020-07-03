@@ -16,12 +16,12 @@ class Sec_4 extends Component {
         errors: []
     }
 
-    handleChange = async (e) => {
+
+    handleChange = (e) => {
+        let { data, isFormValid, isNameValid, isEmailValid, isMessageValid } = this.state;
         const input = e.currentTarget.name;
         const inputValue = e.currentTarget.value;
-        let { data, isFormValid, isNameValid, isEmailValid, isMessageValid } = this.state;
         data[input] = inputValue;
-
 
         if (data['name'] === "" || data['name'] === null || data['name'].length <= 1)
             isNameValid = false;
@@ -31,7 +31,7 @@ class Sec_4 extends Component {
         if (data['email'] === "" || data['email'] === null || !/^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/.test(data['email'])) isEmailValid = false;
         else isEmailValid = true;
 
-        if (data['message'].length <= 1) isMessageValid = false;
+        if (data['message'].length < 1) isMessageValid = false;
         else isMessageValid = true
 
 
@@ -41,18 +41,14 @@ class Sec_4 extends Component {
         } else isFormValid = false;
 
 
-        await this.setState({ data, isFormValid, isEmailValid, isMessageValid, isNameValid })
+        this.setState({ data, isFormValid, isEmailValid, isMessageValid, isNameValid })
 
 
     }
 
     handleSubmit = (e) => {
-        const { isFormValid } = this.state
-        if (!isFormValid)
+        if (!this.state.isFormValid)
             e.preventDefault();
-
-
-
     }
 
 
@@ -64,7 +60,7 @@ class Sec_4 extends Component {
                 <h3>Let's Chat </h3>
                 <div data-aos="fade-left" className="underLineLight" >&nbsp;</div>
                 <div className="container" >
-                    <form name="contact" method="post" className="was-validated" >
+                    <form name="contact" onSubmit={this.handleSubmit} method="post" >
                         <input type="hidden" name="form-name" value="contact" />
                         <div className="form-group">
                             <input value={data.name} onChange={this.handleChange} required placeholder="Name" name="name" id="name" type="text" />
@@ -72,7 +68,7 @@ class Sec_4 extends Component {
 
                         </div>
                         <div className="form-group">
-                            <input value={data.email} onChange={this.handleChange} required type="email" placeholder="Email" name="email" id="email" />
+                            <input value={data.email} onChange={this.handleChange} required placeholder="Email" name="email" id="email" />
                             {isEmailValid && <CheckSvg className="checkSvg" />}
 
                         </div>
@@ -82,7 +78,7 @@ class Sec_4 extends Component {
 
                         </div>
 
-                        <button onClick={this.handleSubmit} type="submit" disabled={!isFormValid} className="submitButton btn">
+                        <button onClick={this.handleSubmit} disabled={!isFormValid} className="submitButton btn">
                             Submit
                         </button>
 
