@@ -42,7 +42,7 @@ class Sec_4 extends Component {
 
 
         await this.setState({ data, isFormValid, isEmailValid, isMessageValid, isNameValid })
-        console.log(this.state.isFormValid);
+
 
     }
 
