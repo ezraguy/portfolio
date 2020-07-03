@@ -274,18 +274,20 @@ $main_font: "Raleway";
     font-weight: bold;
   }
   form {
+    position: relative;
+    margin: 0px 10px 0px 10px;
     padding-top: 30px;
     font-family: $main_font;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    min-width: 95%;
     input,
     textArea {
       border-style: hidden;
       background-color: #383e4d;
-      width: 350px;
       color: white;
+      width: 300px;
       &:focus {
         outline: none;
       }

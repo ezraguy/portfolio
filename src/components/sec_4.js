@@ -56,33 +56,37 @@ class Sec_4 extends Component {
         const { data, isMessageValid, isEmailValid, isNameValid, isFormValid } = this.state
         return (
             <div id="contactMe" className="container-fluid">
-                {/* A little help for the Netlify bots if you're not using a SSG*/}
-                <h3>Let's Chat </h3>
-                <div data-aos="fade-left" className="underLineLight" >&nbsp;</div>
-                <div className="container" >
-                    <form name="contact" onSubmit={this.handleSubmit} method="post" >
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div className="form-group">
-                            <input value={data.name} onChange={this.handleChange} required placeholder="Name" name="name" id="name" type="text" />
-                            {isNameValid && <CheckSvg className="checkSvg" />}
+                <div className="container">
 
-                        </div>
-                        <div className="form-group">
-                            <input value={data.email} onChange={this.handleChange} required placeholder="Email" name="email" id="email" />
-                            {isEmailValid && <CheckSvg className="checkSvg" />}
 
-                        </div>
-                        <div className="form-group">
-                            <textarea value={data.message} onChange={this.handleChange} required name="message" className="pl-2" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
-                            {isMessageValid && <CheckSvg className="checkSvg" />}
+                    {/* A little help for the Netlify bots if you're not using a SSG*/}
+                    <h3>Let's Chat </h3>
+                    <div data-aos="fade-left" className="underLineLight" >&nbsp;</div>
+                    <div className="container" >
+                        <form name="contact" onSubmit={this.handleSubmit} method="post" >
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div className="form-group">
+                                <input value={data.name} onChange={this.handleChange} required placeholder="Name" name="name" id="name" type="text" />
+                                {isNameValid && <CheckSvg className="checkSvg" />}
 
-                        </div>
+                            </div>
+                            <div className="form-group">
+                                <input value={data.email} onChange={this.handleChange} required placeholder="Email" name="email" id="email" />
+                                {isEmailValid && <CheckSvg className="checkSvg" />}
 
-                        <button onClick={this.handleSubmit} disabled={!isFormValid} className="submitButton btn">
-                            Submit
+                            </div>
+                            <div className="form-group">
+                                <textarea value={data.message} onChange={this.handleChange} required name="message" className="pl-2" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
+                                {isMessageValid && <CheckSvg className="checkSvg" />}
+
+                            </div>
+
+                            <button onClick={this.handleSubmit} disabled={!isFormValid} className="submitButton btn">
+                                Submit
                         </button>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         );
