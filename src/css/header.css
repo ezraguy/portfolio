@@ -111,12 +111,6 @@ li {
   padding-right: 35px;
   text-decoration: none !important;
   color: white;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-
-.sidenav button:hover {
-  font-weight: 700;
 }
 
 .sidenav button:focus {
@@ -166,8 +160,6 @@ li {
   color: white;
   outline: none;
   border: none;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

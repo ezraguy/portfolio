@@ -102,11 +102,6 @@ li {
     padding-right: 35px;
     text-decoration: none !important;
     color: white;
-    transition: ease 0.3s;
-
-    &:hover {
-      font-weight: 700;
-    }
 
     &:focus {
       outline: none;
@@ -152,7 +147,6 @@ li {
     color: white;
     outline: none;
     border: none;
-    transition: 1s ease;
   }
 }
 
