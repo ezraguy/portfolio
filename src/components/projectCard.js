@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import "../css/projectCard.css";
 import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
+import { ReactComponent as EyeSvg } from '../svg/eye.svg';
 import cvLpPreview from '../images/cv-lp-preview.png'
 import RNMPreview from '../images/rick-and-morty.png'
-import royalCrm from '../images/royal-crm.png'
+import toDoApp from '../images/to-do-app.png'
 import comingSoon from '../images/coming-soon.png'
 class projectCard extends Component {
     constructor(props) {
@@ -14,15 +15,17 @@ class projectCard extends Component {
                 name: 'PORTFLIO WEBSITE',
                 animationDelay: "100",
                 link: "https://github.com/ezraguy/cv-lp",
+                website: 'https://www.guyezra.com/',
                 img: cvLpPreview
             },
             {
 
                 id: 3,
-                name: 'ROYAL CRM',
+                name: 'TO-DO APP',
                 animationDelay: "200",
-                link: "https://github.com/ezraguy/royal_crm",
-                img: royalCrm
+                link: "https://github.com/ezraguy/to-do-app",
+                website: 'https://pensive-stonebraker-b7fc1a.netlify.app',
+                img: toDoApp
 
             },
             {
@@ -30,6 +33,7 @@ class projectCard extends Component {
                 name: 'RICK AND MORTY CHARACTERS ',
                 animationDelay: "300",
                 link: "https://github.com/ezraguy/rick-and-morty-proj",
+                website: 'https://keen-kowalevski-ce5c6c.netlify.app',
                 img: RNMPreview
             },
             {
@@ -37,6 +41,7 @@ class projectCard extends Component {
                 name: 'VIRTUAL BUSSNIES CARDS PROJECT',
                 animationDelay: "400",
                 link: "https://github.com/ezraguy/business-cards-project",
+                website: '',
                 img: comingSoon
             },
 
@@ -56,6 +61,9 @@ class projectCard extends Component {
                                     <p className="align-bottom"> {project.name}</p>
                                     <a href={project.link} target="_blank" rel="noopener noreferrer" ><GitSvg data-aos="fade-left"
                                     /></a>
+                                    <a href={project.website} target="_blank" rel="noopener noreferrer" ><EyeSvg data-aos="fade-left"
+                                    /></a>
+
                                 </div>
                             </div>
                         )
