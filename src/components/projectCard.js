@@ -4,7 +4,6 @@ import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
 import { ReactComponent as EyeSvg } from '../svg/eye.svg';
 import cvLpPreview from '../images/cv-lp-preview.png'
 import RNMPreview from '../images/rick-and-morty.png'
-import toDoApp from '../images/to-do-app.png'
 import comingSoon from '../images/coming-soon.png'
 class projectCard extends Component {
     constructor(props) {
