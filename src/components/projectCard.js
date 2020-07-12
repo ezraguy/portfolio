@@ -18,16 +18,7 @@ class projectCard extends Component {
                 website: 'https://www.guyezra.com/',
                 img: cvLpPreview
             },
-            {
 
-                id: 3,
-                name: 'TO-DO APP',
-                animationDelay: "200",
-                link: "https://github.com/ezraguy/to-do-app",
-                website: 'https://pensive-stonebraker-b7fc1a.netlify.app',
-                img: toDoApp
-
-            },
             {
                 id: 2,
                 name: 'RICK AND MORTY CHARACTERS ',
@@ -37,7 +28,7 @@ class projectCard extends Component {
                 img: RNMPreview
             },
             {
-                id: 4,
+                id: 3,
                 name: 'VIRTUAL BUSSNIES CARDS PROJECT',
                 animationDelay: "400",
                 link: "https://github.com/ezraguy/business-cards-project",
@@ -55,7 +46,7 @@ class projectCard extends Component {
                 <div className="row justify-content-center">
                     {projects.map((project) => {
                         return (
-                            <div data-aos="fade-down" data-aos-delay={project.animationDelay} key={project.id} className="col-xl-4 col-lg-4 col-md-7  col-sm-10 col-10  projectCard m-2  ">
+                            <div data-aos="fade-down" data-aos-delay={project.animationDelay} key={project.id} className="col-xl-3 col-lg-3 col-md-7  col-sm-10 col-10  projectCard m-2  ">
                                 <img src={project.img} alt="project preview" />
                                 <div className="overlay">
                                     <p className="align-bottom"> {project.name}</p>
