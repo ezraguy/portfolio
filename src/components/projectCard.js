@@ -4,7 +4,7 @@ import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
 import { ReactComponent as EyeSvg } from '../svg/eye.svg';
 import cvLpPreview from '../images/cv-lp-preview.png'
 import RNMPreview from '../images/rick-and-morty.png'
-import comingSoon from '../images/coming-soon.png'
+import poysPizza from '../images/poys-pizza.png';
 class projectCard extends Component {
     constructor(props) {
         super(props);
@@ -28,11 +28,12 @@ class projectCard extends Component {
             },
             {
                 id: 3,
-                name: 'VIRTUAL BUSSNIES CARDS PROJECT',
+                name: 'POYS-PIZZA',
                 animationDelay: "400",
-                link: "https://github.com/ezraguy/business-cards-project",
-                website: '',
-                img: comingSoon
+                link: "https://github.com/ezraguy/poys-pizza",
+                website: 'https://confident-beaver-d51f12.netlify.app/',
+
+                img: poysPizza
             },
 
             ]
