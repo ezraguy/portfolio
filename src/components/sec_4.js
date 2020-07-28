@@ -77,7 +77,7 @@ class Sec_4 extends Component {
 
 
 
-                        <textarea value={data.message} onChange={this.handleChange} required name="message" className="pl-2" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
+                        <textarea value={data.message} onChange={this.handleChange} data-gramm_editor="false" required name="message" className="pl-2" id="message" placeholder="Write your message here..." style={{ height: '200px', resize: 'none' }} ></textarea>
                         {isMessageValid && <CheckSvg className="checkSvg" />}
 
 
