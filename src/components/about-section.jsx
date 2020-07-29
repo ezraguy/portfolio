@@ -5,7 +5,7 @@ import { ReactComponent as SpeedSvg } from "../svg/speedSvg.svg";
 import { ReactComponent as ResponsiveSvg } from "../svg/responsiveSvg.svg";
 import { ReactComponent as AliveSvg } from "../svg/aliveSvg.svg";
 
-function sec_2() {
+function aboutSection() {
   return (
     <div id="about" className="container-fluid ">
       <div className="whoMI container">
@@ -70,4 +70,4 @@ function sec_2() {
   );
 }
 
-export default sec_2;
+export default aboutSection;

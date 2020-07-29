@@ -6,7 +6,7 @@ import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
 import $ from "jquery";
 
-function sec_1() {
+function homeSection() {
   const scrollToDiv = (e) => {
     let div = `#${e.target.value}`;
     $([document.documentElement, document.body]).animate(
@@ -82,4 +82,4 @@ function sec_1() {
   );
 }
 
-export default sec_1;
+export default homeSection;

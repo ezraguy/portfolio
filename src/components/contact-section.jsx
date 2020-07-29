@@ -3,7 +3,7 @@ import "../sass/sections.scss";
 import "../sass/inputValidation.scss";
 import { ReactComponent as CheckSvg } from "../svg/checkSvg.svg";
 
-class Sec_4 extends Component {
+class ContactSction extends Component {
   state = {
     isFormValid: false,
     isNameValid: false,
@@ -72,7 +72,6 @@ class Sec_4 extends Component {
     } = this.state;
     return (
       <div id="contactMe" className="container-fluid">
-        {/* A little help for the Netlify bots if you're not using a SSG*/}
         <h3>Let's Chat </h3>
         <div data-aos="fade-left" className="underLineLight">
           &nbsp;
@@ -88,7 +87,7 @@ class Sec_4 extends Component {
 
             <input
               value={data.name}
-              className=""
+              className="pl-2"
               onChange={this.handleChange}
               required
               placeholder="Name"
@@ -100,6 +99,7 @@ class Sec_4 extends Component {
 
             <input
               value={data.email}
+              className="pl-2"
               onChange={this.handleChange}
               required
               placeholder="Email"
@@ -112,7 +112,7 @@ class Sec_4 extends Component {
               value={data.message}
               onChange={this.handleChange}
               data-gramm_editor="false"
-              spellcheck="false"
+              spellCheck="false"
               required
               name="message"
               className="pl-2"
@@ -136,4 +136,4 @@ class Sec_4 extends Component {
   }
 }
 
-export default Sec_4;
+export default ContactSction;

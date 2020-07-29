@@ -2,7 +2,7 @@ import React from "react";
 import "../sass/sections.scss";
 import ProjectCard from "./projectCard";
 
-function sec_3() {
+function ProjectsSection() {
   return (
     <div id="skills" className="container-fluid ">
       <h3>SOME OF MY PROJECTS</h3>
@@ -17,4 +17,4 @@ function sec_3() {
   );
 }
 
-export default sec_3;
+export default ProjectsSection;
