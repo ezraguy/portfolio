@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../sass/projectCard.scss";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as EyeSvg } from "../svg/eye.svg";
-import cvLpPreview from "../images/cv-lp-preview.png";
+import cvLpPreview from "../images/portfolio-preview.png";
 import RNMPreview from "../images/rick-and-morty.png";
 import guysPizza from "../images/guys-pizza.png";
 class projectCard extends Component {
@@ -14,7 +14,7 @@ class projectCard extends Component {
           id: 1,
           name: "PORTFLIO WEBSITE",
           animationDelay: "100",
-          link: "https://github.com/ezraguy/cv-lp",
+          link: "https://github.com/ezraguy/portfolio",
           website: "https://www.guyezra.com/",
           img: cvLpPreview,
         },
