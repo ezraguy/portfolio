@@ -5,6 +5,7 @@ import { ReactComponent as EyeSvg } from "../svg/eye.svg";
 import cvLpPreview from "../images/portfolio-preview.png";
 import RNMPreview from "../images/rick-and-morty.png";
 import guysPizza from "../images/guys-pizza.png";
+import saarTheBarber from "../images/saar-the-barber.png";
 class projectCard extends Component {
   constructor(props) {
     super(props);
@@ -35,6 +36,14 @@ class projectCard extends Component {
           website: "https://confident-beaver-d51f12.netlify.app/",
           img: guysPizza,
         },
+        {
+          id: 4,
+          name: "SAAR THE BARBER",
+          animationDelay: "500",
+          link: "https://github.com/ezraguy/saar-the-barber",
+          website: "https://nervous-meninsky-d39d48.netlify.app/",
+          img: saarTheBarber,
+        },
       ],
     };
   }
@@ -49,7 +58,7 @@ class projectCard extends Component {
                 data-aos="fade-down"
                 data-aos-delay={project.animationDelay}
                 key={project.id}
-                className="col-xl-3 col-lg-3 col-md-7  col-sm-10 col-10  projectCard m-2  "
+                className="col-xl-4 col-lg-5 col-md-5  col-sm-10 col-10  projectCard m-1 "
               >
                 <img src={project.img} alt="project preview" />
                 <div className="overlay">
