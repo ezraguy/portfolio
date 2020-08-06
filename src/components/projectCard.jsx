@@ -12,7 +12,7 @@ class projectCard extends Component {
       projects: [
         {
           id: 1,
-          name: "PORTFLIO WEBSITE",
+          name: "PORTFOLIO WEBSITE",
           animationDelay: "100",
           link: "https://github.com/ezraguy/portfolio",
           website: "https://www.guyezra.com/",
@@ -29,7 +29,7 @@ class projectCard extends Component {
         },
         {
           id: 3,
-          name: "GUYS-PIZZA",
+          name: "GUY'S PIZZA",
           animationDelay: "400",
           link: "https://github.com/ezraguy/guys-pizza",
           website: "https://confident-beaver-d51f12.netlify.app/",

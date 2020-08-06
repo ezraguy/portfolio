@@ -72,7 +72,7 @@ class ContactSction extends Component {
     } = this.state;
     return (
       <div id="contactMe" className="container-fluid">
-        <h3>Let's Chat </h3>
+        <h3>LET'S CHAT </h3>
         <div data-aos="fade-left" className="underLineLight">
           &nbsp;
         </div>
