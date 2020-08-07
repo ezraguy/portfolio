@@ -63,18 +63,10 @@ class projectCard extends Component {
                 <img src={project.img} alt="project preview" />
                 <div className="overlay">
                   <p className="align-bottom"> {project.name}</p>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.link} rel="noopener noreferrer">
                     <GitSvg data-aos="fade-left" />
                   </a>
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.website} rel="noopener noreferrer">
                     <EyeSvg data-aos="fade-left" />
                   </a>
                 </div>

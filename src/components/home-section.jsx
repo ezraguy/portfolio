@@ -60,16 +60,11 @@ function homeSection() {
           </div>
         </div>
         <div className="sideIcons">
-          <a
-            href="https://github.com/ezraguy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/ezraguy" rel="noopener noreferrer">
             <GitSvg data-aos="fade-left" />
           </a>
           <a
             href="https://www.linkedin.com/in/guyezra"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <LinkedInSvg data-aos="fade-right" />
