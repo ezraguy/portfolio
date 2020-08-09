@@ -26,7 +26,7 @@ function homeSection() {
             className="labelAboveTitle"
           >
             {" "}
-            Hey, i'm Guy Ezra
+            Hey, I'm Guy Ezra
           </div>
           <div
             data-aos="fade-right"
