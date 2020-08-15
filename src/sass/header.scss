@@ -11,8 +11,9 @@
   z-index: 2;
   top: 0px;
   width: 100%;
-
+  
   .nav-item {
+    
     button {
       background-color: transparent;
       border: none;
@@ -20,10 +21,10 @@
       padding-right: 35px;
       text-decoration: none !important;
       color: white;
-      transition: ease 0.2s;
-
+      transition: ease 0.3s;
+      
       &:hover {
-        font-weight: 700;
+        font-weight: bold;
       }
 
       &:focus {

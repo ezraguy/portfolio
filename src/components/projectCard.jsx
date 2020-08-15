@@ -23,7 +23,7 @@ class projectCard extends Component {
         {
           id: 2,
           name: "RICK AND MORTY CHARACTERS ",
-          animationDelay: "300",
+          animationDelay: "200",
           link: "https://github.com/ezraguy/rick-and-morty-proj",
           website: "https://keen-kowalevski-ce5c6c.netlify.app",
           img: RNMPreview,
@@ -31,7 +31,7 @@ class projectCard extends Component {
         {
           id: 3,
           name: "GUY'S PIZZA",
-          animationDelay: "400",
+          animationDelay: "300",
           link: "https://github.com/ezraguy/guys-pizza",
           website: "https://confident-beaver-d51f12.netlify.app/",
           img: guysPizza,
@@ -39,7 +39,7 @@ class projectCard extends Component {
         {
           id: 4,
           name: "SAAR THE BARBER",
-          animationDelay: "500",
+          animationDelay: "400",
           link: "https://github.com/ezraguy/saar-the-barber",
           website: "https://nervous-meninsky-d39d48.netlify.app/",
           img: saarTheBarber,

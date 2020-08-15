@@ -46,14 +46,14 @@ function homeSection() {
             <button
               onClick={scrollToDiv}
               value="about"
-              className="aboutMeBtn btn "
+              className="aboutMeBtn"
             >
               ABOUT ME
             </button>
             <button
               onClick={scrollToDiv}
               value="contactMe"
-              className="letsTalk btn "
+              className="letsTalk"
             >
               LET'S CHAT
             </button>
