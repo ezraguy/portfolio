@@ -41,7 +41,7 @@ class projectCard extends Component {
           name: "SAAR THE BARBER",
           animationDelay: "400",
           link: "https://github.com/ezraguy/saar-the-barber",
-          website: "https://nervous-meninsky-d39d48.netlify.app/",
+          website: "https://www.saarthebarber.com/",
           img: saarTheBarber,
         },
       ],
