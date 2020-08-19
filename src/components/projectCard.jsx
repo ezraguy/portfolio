@@ -58,7 +58,7 @@ class projectCard extends Component {
                 data-aos="fade-down"
                 data-aos-delay={project.animationDelay}
                 key={project.id}
-                className="col-xl-4 col-lg-5 col-md-5  col-sm-10 col-10  projectCard m-1 "
+                className="col-xl-4 col-lg-5 col-md-5  col-sm-10 col-xs-12 col-12  projectCard m-1 "
               >
                 <img src={project.img} alt="project preview" />
                 <div className="overlay">
