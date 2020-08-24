@@ -127,7 +127,7 @@ class ContactSction extends Component {
               disabled={!isFormValid}
               className="submitButton btn"
             >
-              Submit
+              SUBMIT
             </button>
           </form>
         </div>
