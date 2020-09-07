@@ -87,17 +87,20 @@ $main_font: "Roboto";
   }
 
   .aboutMeBtn {
+    cursor: pointer;
     margin-right: 5px;
     background-color: transparent;
     border: #82c0cc solid 1px;
     color: white;
-    justify-content: center;
+    text-align: center;
+    line-height: 40px;
     height: 60px;
     width: 135px;
     font-size: 1em;
     font-weight: 700;
     border-radius: 50px;
     float: left;
+    padding: 10px;
     transition: 0.3s ease;
     margin-bottom: 5px;
 
@@ -109,20 +112,13 @@ $main_font: "Roboto";
        outline: none;
     }
 
+    
   }
 
   .letsTalk {
-    margin-right: 5px;
+   @extend .aboutMeBtn;
     background-color: #ffffff;
     color: rgb(85, 85, 85);
-    text-align: center;
-    height: 60px;
-    width: 135px;
-    font-size: 1em;
-    font-weight: 700;
-    border-radius: 50px;
-    float: left;
-    transition: 0.3s ease;
     border: none;
     
 

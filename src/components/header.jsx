@@ -2,9 +2,10 @@ import React, { useRef } from "react";
 import "../sass/header.scss";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
-import $ from "jquery";
+import { Link } from 'react-scroll';
 
-function Header() {
+
+const Header = () => {
   const sideNav = useRef();
   const sideNavToggle = useRef();
 
@@ -16,12 +17,6 @@ function Header() {
   };
 
   const scrollToDiv = (e) => {
-    let div = `#${e.target.value}`;
-    $([document.documentElement, document.body]).animate(
-      {
-        scrollTop: $(div).offset().top,
-      }, 0
-    );
     closeNav();
   };
 
@@ -43,29 +38,33 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ">
           <li className="nav-item ">
-            <button className="nav-link" value="home" onClick={scrollToDiv}>
+            <Link smooth={false}
+              duration={700} className="nav-link" to={"home"} onClick={scrollToDiv}>
               HOME
-            </button>
+            </Link>
           </li>
           <li className="nav-item">
-            <button className="nav-link" value="about" onClick={scrollToDiv}>
+            <Link smooth={false}
+              duration={700} className="nav-link" to={"about"} onClick={scrollToDiv}>
               ABOUT
-            </button>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <button className="nav-link" value="skills" onClick={scrollToDiv}>
+            <Link smooth={false}
+              duration={700} className="nav-link" to={"skills"} onClick={scrollToDiv}>
               SKILLS
-            </button>
+            </Link>
           </li>
           <li className="nav-item">
-            <button
+            <Link smooth={false}
+              duration={700}
+              to={"contactMe"}
               className="nav-link"
-              value="contactMe"
               onClick={scrollToDiv}
             >
               CONTACT
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -75,18 +74,22 @@ function Header() {
         <button className="closeBtn" onClick={closeNav}>
           &times;
         </button>
-        <button className="nav-item" value="home" onClick={scrollToDiv}>
+        <Link smooth={true}
+          duration={700} className="nav-item" to={"home"} onClick={scrollToDiv}>
           HOME
-        </button>
-        <button className="nav-item" value="about" onClick={scrollToDiv}>
+        </Link>
+        <Link smooth={true}
+          duration={700} className="nav-item" to={"about"} onClick={scrollToDiv}>
           ABOUT
-        </button>
-        <button className="nav-item" value="skills" onClick={scrollToDiv}>
+        </Link>
+        <Link smooth={true}
+          duration={700} className="nav-item" to={"skills"} onClick={scrollToDiv}>
           SKILLS
-        </button>
-        <button className="nav-item" value="contactMe" onClick={scrollToDiv}>
+        </Link>
+        <Link smooth={true}
+          duration={700} className="nav-item" to={"contactMe"} onClick={scrollToDiv}>
           CONTACT
-        </button>
+        </Link>
 
         <div className="sideIconsInSideNav">
           <a href="https://github.com/ezraguy" rel="noopener noreferrer">

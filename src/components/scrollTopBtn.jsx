@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import arrow from "../svg/arrow-up.svg";
 import '../sass/topBtn.scss';
+import { Link } from "react-scroll";
 
 const ScrollTopBtn = () => {
-
 
   const [btnClass, setBtnClass] = useState("topBtn")
 
   useEffect(() => {
-
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 100) {
         setBtnClass('topBtn-visible');
@@ -19,20 +18,18 @@ const ScrollTopBtn = () => {
 
   }, [])
 
-  const scrollToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
 
   return (
-    <button
+    <Link
       id="topBtn"
-      onClick={scrollToTop}
+      to={"home"}
+      smooth={true}
+      duration={700}
       className={btnClass}
     >
       <img alt="arrow" src={arrow}></img>
-    </button>
+    </Link>
   );
 
 }

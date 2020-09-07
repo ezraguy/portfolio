@@ -4,18 +4,10 @@ import "../sass/topBtn.scss";
 import ScrollTopBtn from "./scrollTopBtn";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
-import $ from "jquery";
+import { Link } from 'react-scroll';
 
 function homeSection() {
-  const scrollToDiv = (e) => {
-    let div = `#${e.target.value}`;
-    $([document.documentElement, document.body]).animate(
-      {
-        scrollTop: $(div).offset().top,
-      },
-      "slow"
-    );
-  };
+
   return (
     <div id="home" className="row container-fluid">
       <div className="leftDiv col-lg-6 col-md-6 col-sm-6 col-xs-12 container ">
@@ -25,7 +17,7 @@ function homeSection() {
             data-aos-delay="100"
             className="labelAboveTitle"
           >
-            {" "}
+
             Hey, I'm Guy Ezra
           </div>
           <div
@@ -43,20 +35,21 @@ function homeSection() {
             <p>My biggest passion is to make a website come to life.</p>
           </div>
           <div data-aos="fade-right" data-aos-delay="400">
-            <button
-              onClick={scrollToDiv}
-              value="about"
-              className="aboutMeBtn"
-            >
+            <Link
+              to={"about"}
+              smooth={true}
+              duration={700}
+              className="aboutMeBtn">
               ABOUT ME
-            </button>
-            <button
-              onClick={scrollToDiv}
-              value="contactMe"
+            </Link>
+            <Link
+              to={"contactMe"}
+              smooth={true}
+              duration={700}
               className="letsTalk"
             >
               LET'S CHAT
-            </button>
+            </Link>
           </div>
         </div>
         <div className="sideIcons">
