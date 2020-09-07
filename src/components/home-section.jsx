@@ -5,9 +5,17 @@ import ScrollTopBtn from "./scrollTopBtn";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
 import { Link } from 'react-scroll';
+import { useState } from "react";
+import { useEffect } from "react";
 
-function homeSection() {
+const HomeSection = () => {
 
+  const [isOnMobile, setIsOnMobile] = useState(false)
+
+  useEffect(() => {
+    if (window.screen.width < 1000)
+      setIsOnMobile(true)
+  }, [])
   return (
     <div id="home" className="row container-fluid">
       <div className="leftDiv col-lg-6 col-md-6 col-sm-6 col-xs-12 container ">
@@ -37,14 +45,14 @@ function homeSection() {
           <div data-aos="fade-right" data-aos-delay="400">
             <Link
               to={"about"}
-              smooth={true}
+              smooth={isOnMobile}
               duration={700}
               className="aboutMeBtn">
               ABOUT ME
             </Link>
             <Link
               to={"contactMe"}
-              smooth={true}
+              smooth={isOnMobile}
               duration={700}
               className="letsTalk"
             >
@@ -70,4 +78,4 @@ function homeSection() {
   );
 }
 
-export default homeSection;
+export default HomeSection;

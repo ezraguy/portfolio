@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 const ScrollTopBtn = () => {
 
   const [btnClass, setBtnClass] = useState("topBtn")
+  const [isOnMobile, setIsOnMobile] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -17,6 +18,10 @@ const ScrollTopBtn = () => {
     });
 
   }, [])
+  useEffect(() => {
+    if (window.screen.width < 1000)
+      setIsOnMobile(true)
+  }, [])
 
 
 
@@ -24,7 +29,7 @@ const ScrollTopBtn = () => {
     <Link
       id="topBtn"
       to={"home"}
-      smooth={true}
+      smooth={isOnMobile}
       duration={700}
       className={btnClass}
     >
