@@ -20,8 +20,7 @@ function Header() {
     $([document.documentElement, document.body]).animate(
       {
         scrollTop: $(div).offset().top,
-      },
-      "slow"
+      }, 0
     );
     closeNav();
   };

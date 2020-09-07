@@ -5,11 +5,10 @@
     width: 70px;
     border-radius: 50%;
     position: fixed;
-    bottom: 25px;
+    bottom: -100px;
     right: 10px;
     transition: 0.5s ease;
-    opacity: 0;
-    z-index: 5;
+    z-index: 100;
     border: none;
 
     img {
@@ -28,4 +27,9 @@
         outline: none;
     }
 
+}
+
+.topBtn-visible{
+    @extend .topBtn;
+    bottom: 20px !important;
 }

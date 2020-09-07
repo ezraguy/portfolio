@@ -1,40 +1,40 @@
-import React, { Component } from "react";
-import $ from "jquery";
+import React, { useEffect, useState } from "react";
 import arrow from "../svg/arrow-up.svg";
+import '../sass/topBtn.scss';
 
-class ScrollTopBtn extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { visibility: "hidden", dis: true, opacity: 0 };
-  }
+const ScrollTopBtn = () => {
 
-  componentDidMount() {
+
+  const [btnClass, setBtnClass] = useState("topBtn")
+
+  useEffect(() => {
+
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 150) {
-        this.setState({ visibility: "visible", opacity: 1, dis: false });
+      if (window.pageYOffset > 100) {
+        setBtnClass('topBtn-visible');
       } else {
-        this.setState({ visibility: "hidden", opacity: 0, dis: true });
+        setBtnClass('topBtn');
       }
     });
+
+  }, [])
+
+  const scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
-  scrollUp = () => {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-  };
-  render() {
-    const { visibility, opacity, dis } = this.state;
-    return (
-      <button
-        id="topBtn"
-        disabled={dis}
-        style={{ visibility: visibility, opacity: opacity }}
-        onClick={() => this.scrollUp()}
-        className="topBtn"
-      >
-        <img alt="arrow" src={arrow}></img>
-      </button>
-    );
-  }
+
+  return (
+    <button
+      id="topBtn"
+      onClick={scrollToTop}
+      className={btnClass}
+    >
+      <img alt="arrow" src={arrow}></img>
+    </button>
+  );
+
 }
 
 export default ScrollTopBtn;
