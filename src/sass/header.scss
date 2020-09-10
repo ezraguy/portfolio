@@ -56,10 +56,9 @@
   }
 
   .logo {
-  
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 10px;
+    top: 10px;
     font-size: 14pt;
     font-weight: bold;
     color: white;
@@ -103,6 +102,13 @@ li {
 
 @media screen and (max-width: 992px) {
   
+  .logo {
+    
+    left: 15px !important;
+    top: 15px !important;
+    
+  }
+
   li {
     margin: 0;
   }
@@ -188,4 +194,5 @@ li {
   .sidenav a {
     font-size: 18px;
   }
+ 
 }
