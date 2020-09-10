@@ -13,7 +13,7 @@ const HomeSection = () => {
   const [isOnMobile, setIsOnMobile] = useState(false)
 
   useEffect(() => {
-    if (window.screen.width < 1000)
+    if (window.screen.width < 600)
       setIsOnMobile(true)
   }, [])
   return (
@@ -44,6 +44,7 @@ const HomeSection = () => {
           </div>
           <div data-aos="fade-right" data-aos-delay="400">
             <Link
+              offset={-60}
               to={"about"}
               smooth={isOnMobile}
               duration={700}
@@ -51,6 +52,7 @@ const HomeSection = () => {
               ABOUT ME
             </Link>
             <Link
+              offset={-60}
               to={"contactMe"}
               smooth={isOnMobile}
               duration={700}

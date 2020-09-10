@@ -2,10 +2,10 @@
   transition: 0.3s ease-in-out;
   background-color: transparent;
   color: white;
-  height: 40px;
-  justify-content: center;
+  height: 60px;
+  display: flex;
   align-items: center;
-  border-radius: 15px;
+  justify-content: center;
   overflow: none;
   position: absolute;
   z-index: 2;
@@ -13,7 +13,6 @@
   width: 100%;
   
   .nav-item {
-    
     a {
       cursor: pointer;
       background-color: transparent;
@@ -22,35 +21,57 @@
       padding-right: 35px;
       text-decoration: none !important;
       color: white ;
-      
       transition: ease 0.3s;
       
-      &:hover {
-        font-weight: bold;
-      }
+      
 
       &:focus {
         outline: none;
       }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        height: 2px;
+        transform: scaleX(0) !important;
+        transition: transform .3s ease;
+        transform-origin: bottom right;
+        background-color: white;
+      }
+
+      &:hover {
+        color: white;
+        transform: translateY(-.1px);
+        &::after {
+          transform-origin: bottom left;
+          transform: scaleX(1) !important;
+        }
+      }
+      
     }
+    
   }
 
   .logo {
+  
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 15px;
+    top: 15px;
     font-size: 14pt;
     font-weight: bold;
     color: white;
   }
 
-  #navTogglerBtn {
-    position: sticky;
-    transition: 0.3s ease;
-    &:focus {
-      outline: none;
-    }
-  }
+  
+}
+.fixed-header{
+  position: fixed !important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  background-color: #0c0c0cec !important;
+  
 }
 
 .navbar-collapse {
@@ -64,19 +85,24 @@ li {
 }
 
 .navbar-toggler {
-  position: fixed;
-  margin-top: 9px;
-  background-color: rgb(250, 247, 247);
+  margin-right:auto;
+  position: absolute;
+  width: 60px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+  
+  
+  
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #0c0c0cec;
-    width: 250px;
-    text-align: center;
-    margin-top: 60px;
-  }
-
+  
   li {
     margin: 0;
   }
@@ -94,7 +120,7 @@ li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffa72bf5;
+  background-color: #0c0c0cec !important;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -154,7 +180,7 @@ li {
   }
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
