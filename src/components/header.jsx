@@ -49,7 +49,7 @@ const Header = () => {
         <ul className="navbar-nav ">
           <li className="nav-item ">
             <Link smooth={false}
-              duration={700} className="nav-link" to={"home"} offset={-60} onClick={scrollToDiv}>
+              duration={700} className="nav-link" to={"home"} onClick={scrollToDiv}>
               HOME
             </Link>
           </li>
