@@ -86,7 +86,7 @@ const Header = () => {
           &times;
         </button>
         <Link smooth={true}
-          duration={700} className="nav-item" to={"home"} offset={-60} onClick={scrollToDiv}>
+          duration={700} className="nav-item" to={"home"} onClick={scrollToDiv}>
           HOME
         </Link>
         <Link smooth={true}
