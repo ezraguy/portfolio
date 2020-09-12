@@ -3,7 +3,7 @@ import "../sass/projectCard.scss";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as EyeSvg } from "../svg/eye.svg";
 import cvLpPreview from "../images/portfolio-preview.png";
-import RNMPreview from "../images/rick-and-morty.png";
+import RockPaperScissors from "../images/rock-paper-scissors.png";
 import guysPizza from "../images/guys-pizza.png";
 import saarTheBarber from "../images/saar-the-barber.png";
 class projectCard extends Component {
@@ -22,11 +22,11 @@ class projectCard extends Component {
 
         {
           id: 2,
-          name: "RICK AND MORTY CHARACTERS ",
+          name: "ROCK PAPER SCISSORS LIZARD SPOCK ",
           animationDelay: "200",
-          link: "https://github.com/ezraguy/rick-and-morty-proj",
-          website: "https://keen-kowalevski-ce5c6c.netlify.app",
-          img: RNMPreview,
+          link: "https://github.com/ezraguy/Rock-Paper-Scissors-game",
+          website: "https://rock-paper-scissors-lizard-spock-ge.netlify.app/",
+          img: RockPaperScissors,
         },
         {
           id: 3,
