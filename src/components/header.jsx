@@ -20,7 +20,7 @@ const Header = () => {
     }, [])
   })
   const openNav = () => {
-    sideNav.current.style.width = "250px";
+    sideNav.current.style.width = "55%";
   };
   const closeNav = () => {
     sideNav.current.style.width = "0px";
