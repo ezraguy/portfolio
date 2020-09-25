@@ -11,7 +11,7 @@ const ProjectCard = () => {
   const [projects] = useState([
     {
       id: 1,
-      name: "Shorten URL Api",
+      name: "Shortly",
       animationDelay: "100",
       link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
       website: "https://url-shortening-api-lp-ge.netlify.app/",
@@ -58,7 +58,7 @@ const ProjectCard = () => {
             >
               <img src={project.img} alt="project preview" />
               <div className="overlay">
-                <p className="align-bottom"> {project.name}</p>
+                <p className="align-bottom project-name">{project.name}</p>
                 <a href={project.link} rel="noopener noreferrer">
                   <GitSvg data-aos="fade-left" />
                 </a>
