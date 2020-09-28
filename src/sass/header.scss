@@ -11,12 +11,11 @@
   z-index: 2;
   top: 0px;
   width: 100%;
-
+  
   .navbar-nav{
     display: flex;
-    height: inherit;
-    align-items: center;
-    justify-content: center ;
+    padding-top: 3px;
+   
     .nav-item {
       a {
         cursor: pointer;
@@ -66,7 +65,7 @@
   .logo {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 12px;
     font-size: 14pt;
     font-weight: bold;
     color: white;
