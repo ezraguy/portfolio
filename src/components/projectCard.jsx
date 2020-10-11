@@ -5,7 +5,7 @@ import { ReactComponent as EyeSvg } from "../svg/eye.svg";
 import urlShorten from "../images/url-api.png";
 import RockPaperScissors from "../images/rock-paper-scissors.png";
 import guysPizza from "../images/guys-pizza.png";
-import saarTheBarber from "../images/saar-the-barber.png";
+import archstudio from "../images/arch-studio.png";
 const ProjectCard = () => {
 
   const [projects] = useState([
@@ -36,11 +36,11 @@ const ProjectCard = () => {
     },
     {
       id: 4,
-      name: "SAAR THE BARBER",
+      name: "ARCH STUDIO",
       animationDelay: "400",
-      link: "https://github.com/ezraguy/saar-the-barber",
-      website: "https://www.saarthebarber.com/",
-      img: saarTheBarber,
+      link: "https://github.com/ezraguy/arch-studio",
+      website: "https://arch-studio-ge.netlify.app/",
+      img: archstudio,
     },
   ])
 
