@@ -11,11 +11,11 @@ const ProjectCard = () => {
   const [projects] = useState([
     {
       id: 1,
-      name: "Shortly",
+      name: "ARCH STUDIO",
       animationDelay: "100",
-      link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
-      website: "https://url-shortening-api-lp-ge.netlify.app/",
-      img: urlShorten,
+      link: "https://github.com/ezraguy/arch-studio",
+      website: "https://arch-studio-ge.netlify.app/",
+      img: archstudio,
     },
 
     {
@@ -36,11 +36,13 @@ const ProjectCard = () => {
     },
     {
       id: 4,
-      name: "ARCH STUDIO",
+
+
+      name: "Shortly",
       animationDelay: "400",
-      link: "https://github.com/ezraguy/arch-studio",
-      website: "https://arch-studio-ge.netlify.app/",
-      img: archstudio,
+      link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
+      website: "https://url-shortening-api-lp-ge.netlify.app/",
+      img: urlShorten,
     },
   ])
 
