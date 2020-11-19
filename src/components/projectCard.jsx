@@ -33,7 +33,7 @@ const ProjectCard = () => {
 
       id: 3,
       name: "Saar The Barber",
-      animationDelay: "500",
+      animationDelay: "300",
       link: "https://github.com/ezraguy/saar-the-barber",
       website: "https://www.saarthebarber.com/",
       img: saarTheBarber,
@@ -51,7 +51,7 @@ const ProjectCard = () => {
 
       id: 5,
       name: "Officelight",
-      animationDelay: "600",
+      animationDelay: "500",
       link: "https://github.com/ezraguy/office-light-challenge",
       website: "https://office-light-ge.netlify.app/",
       img: officelight,
@@ -60,7 +60,7 @@ const ProjectCard = () => {
     {
       id: 6,
       name: "GUY'S PIZZA",
-      animationDelay: "300",
+      animationDelay: "600",
       link: "https://github.com/ezraguy/guys-pizza",
       website: "https://confident-beaver-d51f12.netlify.app/",
       img: guysPizza,
