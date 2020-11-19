@@ -6,6 +6,8 @@ import urlShorten from "../images/url-api.png";
 import RockPaperScissors from "../images/rock-paper-scissors.png";
 import guysPizza from "../images/guys-pizza.png";
 import archstudio from "../images/arch-studio.png";
+import saarTheBarber from "../images/saar-the-barber.png";
+import officelight from "../images/office-light.png";
 const ProjectCard = () => {
 
   const [projects] = useState([
@@ -26,24 +28,44 @@ const ProjectCard = () => {
       website: "https://rock-paper-scissors-lizard-spock-ge.netlify.app/",
       img: RockPaperScissors,
     },
+
     {
+
       id: 3,
-      name: "GUY'S PIZZA",
-      animationDelay: "300",
-      link: "https://github.com/ezraguy/guys-pizza",
-      website: "https://confident-beaver-d51f12.netlify.app/",
-      img: guysPizza,
+      name: "Saar The Barber",
+      animationDelay: "500",
+      link: "https://github.com/ezraguy/saar-the-barber",
+      website: "https://www.saarthebarber.com/",
+      img: saarTheBarber,
     },
     {
       id: 4,
-
-
       name: "Shortly",
       animationDelay: "400",
       link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
       website: "https://url-shortening-api-lp-ge.netlify.app/",
       img: urlShorten,
     },
+
+    {
+
+      id: 5,
+      name: "Officelight",
+      animationDelay: "600",
+      link: "https://github.com/ezraguy/office-light-challenge",
+      website: "https://office-light-ge.netlify.app/",
+      img: officelight,
+
+    },
+    {
+      id: 6,
+      name: "GUY'S PIZZA",
+      animationDelay: "300",
+      link: "https://github.com/ezraguy/guys-pizza",
+      website: "https://confident-beaver-d51f12.netlify.app/",
+      img: guysPizza,
+    },
+
   ])
 
 
