@@ -7,7 +7,7 @@ import RockPaperScissors from "../images/rock-paper-scissors.png";
 import guysPizza from "../images/guys-pizza.png";
 import archstudio from "../images/arch-studio.png";
 import saarTheBarber from "../images/saar-the-barber.png";
-import officelight from "../images/office-light.png";
+import officelite from "../images/office-light.png";
 const ProjectCard = () => {
 
   const [projects] = useState([
@@ -50,11 +50,11 @@ const ProjectCard = () => {
     {
 
       id: 5,
-      name: "Officelight",
+      name: "Officelite",
       animationDelay: "500",
       link: "https://github.com/ezraguy/office-light-challenge",
       website: "https://office-light-ge.netlify.app/",
-      img: officelight,
+      img: officelite,
 
     },
     {
