@@ -10,9 +10,7 @@ function aboutSection() {
     <div id="about" className="container-fluid ">
       <div className="whoMI container">
         <div className="firstHeader container ">WHO IS THIS DUDE? </div>
-        <div data-aos="fade-left" className="underLineDark">
-          &nbsp;
-        </div>
+        <div data-aos="fade-left" className="underLineDark"></div>
 
         <div data-aos="fade-right" className="textUnderHeader ">
           Hey, I'm a 23 years old front-end developer with a big passion for
@@ -26,7 +24,7 @@ function aboutSection() {
       <div className="header container">
         <span className="">MY CORE VALUES</span>
         <div data-aos="fade-right" className="underLineDark">
-          &nbsp;
+
         </div>
       </div>
 
