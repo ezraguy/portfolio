@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../sass/projectCard.scss";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as EyeSvg } from "../svg/eye.svg";
 import urlShorten from "../images/url-api.png";

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import "../sass/sections.scss";
-import "../sass/inputValidation.scss";
 import { ReactComponent as CheckSvg } from "../svg/checkSvg.svg";
 
 class ContactSction extends Component {

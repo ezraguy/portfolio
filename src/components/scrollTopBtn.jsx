@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import arrow from "../svg/arrow-up.svg";
-import '../sass/topBtn.scss';
+
 import { Link } from "react-scroll";
 
 const ScrollTopBtn = () => {

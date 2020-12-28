@@ -1,6 +1,5 @@
 import React from "react";
 import "aos/dist/aos.css";
-import "../sass/sections.scss";
 import { ReactComponent as SpeedSvg } from "../svg/speedSvg.svg";
 import { ReactComponent as ResponsiveSvg } from "../svg/responsiveSvg.svg";
 import { ReactComponent as AliveSvg } from "../svg/aliveSvg.svg";

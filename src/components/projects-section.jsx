@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/sections.scss";
 import ProjectCard from "./projectCard";
 
 function ProjectsSection() {

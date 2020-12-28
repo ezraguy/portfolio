@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import "../sass/header.scss";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
 import { Link } from 'react-scroll';

@@ -1,6 +1,4 @@
 import React from "react";
-import "../sass/sections.scss";
-import "../sass/topBtn.scss";
 import ScrollTopBtn from "./scrollTopBtn";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
