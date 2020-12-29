@@ -25,7 +25,7 @@ $main_font: "Roboto";
 }
 
 #home {
-  overflow-x: hidden;
+ 
   margin: 0px;
   padding: 0px;
   font-family: $main_font;
@@ -155,7 +155,7 @@ $main_font: "Roboto";
 }
 
 #about {
-  overflow: hidden;
+ 
   margin: 0px;
   padding: 0px;
   font-family: $main_font;
@@ -231,6 +231,7 @@ $main_font: "Roboto";
 #skills {
   position: relative;
   margin: 0px;
+  width: 100%;
   background-color: #104e5b;
   padding: 0px;
   font-family: $main_font;
@@ -260,8 +261,7 @@ $main_font: "Roboto";
   .projects {
     margin-top: 20px;
     padding-bottom: 50px;
-  }
-
+  } 
   &:after,&:before{
     position: absolute;
     width:100px;
@@ -280,7 +280,6 @@ $main_font: "Roboto";
     right: 50%;
     transform: skew(0,20deg);
   }
-  
 }
 
 #contactMe {

@@ -1,9 +1,11 @@
 html {
   width: 100% !important;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .App {
+ 
   scroll-behavior: smooth !important;
   text-align: center;
   background-color: #ffffff;
