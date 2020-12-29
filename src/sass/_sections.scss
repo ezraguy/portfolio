@@ -230,13 +230,11 @@ $main_font: "Roboto";
 
 #skills {
   position: relative;
-  overflow-x: hidden;
   margin: 0px;
   background-color: #104e5b;
   padding: 0px;
   font-family: $main_font;
   margin-top: 50px;
-
   font-size: 16pt;
   color: white;
 
@@ -261,11 +259,32 @@ $main_font: "Roboto";
   }
   .projects {
     margin-top: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
+
+  &:after,&:before{
+    position: absolute;
+    width:100px;
+    height: 40px;
+    content: '';
+    background-color: #104e5b;
+    bottom: -17px;
+  }
+
+  &::after{
+    transform: skew(0,-20deg);
+  }
+
+  &::before{
+    z-index: 1;
+    right: 50%;
+    transform: skew(0,20deg);
+  }
+  
 }
 
 #contactMe {
+  padding-top: 40px;
   background-color: #292e3a;
   overflow-x: hidden;
   font-family: $main_font;
