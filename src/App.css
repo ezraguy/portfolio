@@ -4,6 +4,10 @@ html {
   overflow-x: hidden;
 }
 
+html a:hover{
+  text-decoration: none;
+}
+
 .App {
  
   scroll-behavior: smooth !important;
