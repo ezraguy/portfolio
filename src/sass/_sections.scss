@@ -238,6 +238,7 @@ $main_font: "Roboto";
   margin-top: 50px;
   font-size: 16pt;
   color: white;
+  overflow-x: hidden;
 
   h3 {
     font-family: $main_font;
@@ -262,24 +263,7 @@ $main_font: "Roboto";
     margin-top: 20px;
     padding-bottom: 50px;
   } 
-  &:after,&:before{
-    position: absolute;
-    width:100px;
-    height: 40px;
-    content: '';
-    background-color: #104e5b;
-    bottom: -17px;
-  }
-
-  &::after{
-    transform: skew(0,-20deg);
-  }
-
-  &::before{
-    z-index: 1;
-    right: 50%;
-    transform: skew(0,20deg);
-  }
+  
 }
 
 #contactMe {
