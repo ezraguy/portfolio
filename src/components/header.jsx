@@ -19,7 +19,7 @@ const Header = () => {
     }, [])
   })
   const openNav = () => {
-    sideNav.current.style.width = "55%";
+    sideNav.current.style.width = "230px";
   };
   const closeNav = () => {
     sideNav.current.style.width = "0px";
@@ -54,11 +54,10 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link smooth={false}
-              duration={700} className="nav-link" to={"about"} offset={-60} onClick={scrollToDiv}>
+              duration={700} className="nav-link" to={"about"} offset={-80} onClick={scrollToDiv}>
               ABOUT
             </Link>
           </li>
-
           <li className="nav-item">
             <Link smooth={false}
               duration={700} className="nav-link" to={"skills"} offset={-60} onClick={scrollToDiv}>
@@ -89,7 +88,7 @@ const Header = () => {
           HOME
         </Link>
         <Link smooth={true}
-          duration={700} className="nav-item" to={"about"} offset={-60} onClick={scrollToDiv}>
+          duration={700} className="nav-item" to={"about"} offset={-80} onClick={scrollToDiv}>
           ABOUT
         </Link>
         <Link smooth={true}

@@ -60,8 +60,6 @@
 
   }
   
-  
-
   .logo {
    position: absolute;
     left: 10px;
@@ -98,22 +96,15 @@ li {
   right: 0;
   margin-left: auto;
   background-color: transparent;
-
   &:focus {
     outline: none;
   }
-  
-  
-  
 }
 
 @media screen and (max-width: 992px) {
-  
   .logo {
-    
     left: 15px !important;
     top: 15px !important;
-    
   }
 
   li {
@@ -202,6 +193,4 @@ li {
       font-size: 18px;
     }
   }
-  
- 
 }
