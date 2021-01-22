@@ -42,7 +42,7 @@ const HomeSection = () => {
           </div>
           <div data-aos="fade-right" data-aos-delay="400">
             <Link
-              offset={-60}
+              offset={-80}
               to={"about"}
               smooth={isOnMobile}
               duration={700}
