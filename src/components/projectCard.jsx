@@ -34,7 +34,7 @@ const ProjectCard = () => {
       name: "Saar The Barber",
       animationDelay: "300",
       link: "https://github.com/ezraguy/saar-the-barber",
-      website: "https://www.saarthebarber.com/",
+      website: "https://saarbarber.netlify.app/",
       img: saarTheBarber,
     },
     {
