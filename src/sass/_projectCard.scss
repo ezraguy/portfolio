@@ -49,12 +49,14 @@
     flex-direction: column;
     opacity: 0;
   
-    svg {
-      margin-top: 10px;
-      width: 30px;
-      fill: white;
-      cursor: pointer;
-      transition: 0.3s ease;
+    .svg-wrap{
+      svg {
+        margin: 5px 10px;
+        width: 30px;
+        fill: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
     }
   }
 

@@ -82,12 +82,14 @@ const ProjectCard = () => {
               <img src={project.img} alt="project preview" />
               <div className="overlay">
                 <p className="align-bottom project-name">{project.name}</p>
-                <a href={project.link} rel="noopener noreferrer">
-                  <GitSvg data-aos="fade-left" />
-                </a>
-                <a href={project.website} rel="noopener noreferrer">
-                  <EyeSvg data-aos="fade-left" />
-                </a>
+                <div className="svg-wrap">
+                  <a href={project.link} rel="noopener noreferrer">
+                    <GitSvg data-aos="fade-left" />
+                  </a>
+                  <a href={project.website} rel="noopener noreferrer">
+                    <EyeSvg data-aos="fade-left" />
+                  </a>
+                </div>
               </div>
             </div>
           );
