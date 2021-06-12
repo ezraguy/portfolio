@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as EyeSvg } from "../svg/eye.svg";
-import urlShorten from "../images/url-api.png";
-import RockPaperScissors from "../images/rock-paper-scissors.png";
-import guysPizza from "../images/guys-pizza.png";
-import archstudio from "../images/arch-studio.png";
-import saarTheBarber from "../images/saar-the-barber.png";
-import officelite from "../images/office-light.png";
+import urlShorten from "../images/url-api.webp";
+import RockPaperScissors from "../images/rock-paper-scissors.webp";
+import guysPizza from "../images/guys-pizza.webp";
+import archstudio from "../images/arch-studio.webp";
+import saarTheBarber from "../images/saar-the-barber.webp";
+import officelite from "../images/office-light.webp";
 const ProjectCard = () => {
 
   const [projects] = useState([
