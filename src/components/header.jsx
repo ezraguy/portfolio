@@ -64,17 +64,7 @@ const Header = () => {
               SKILLS
             </Link>
           </li>
-          <li className="nav-item">
-            <Link smooth={false}
-              offset={-60}
-              duration={700}
-              to={"contactMe"}
-              className="nav-link"
-              onClick={scrollToDiv}
-            >
-              CONTACT
-            </Link>
-          </li>
+
         </ul>
       </div>
 
@@ -94,10 +84,6 @@ const Header = () => {
         <Link smooth={true}
           duration={700} className="nav-item" to={"skills"} offset={-60} onClick={scrollToDiv}>
           SKILLS
-        </Link>
-        <Link smooth={true}
-          duration={700} className="nav-item" to={"contactMe"} offset={-60} onClick={scrollToDiv}>
-          CONTACT
         </Link>
 
         <div className="sideIconsInSideNav">

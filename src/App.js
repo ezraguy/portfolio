@@ -5,7 +5,6 @@ import Header from './components/header';
 import HomeSection from './components/home-section'
 import AboutSection from './components/about-section'
 import ProjectsSection from './components/projects-section'
-import ContactSction from './components/contact-section'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,8 +17,6 @@ function App() {
       <HomeSection />
       <AboutSection />
       <ProjectsSection />
-      <ContactSction />
-
     </div>
 
   );
