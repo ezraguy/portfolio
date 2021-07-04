@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
 import { ReactComponent as EyeSvg } from "../svg/eye.svg";
-import urlShorten from "../images/url-api.png";
-import RockPaperScissors from "../images/rock-paper-scissors.png";
-import guysPizza from "../images/guys-pizza.png";
-import archstudio from "../images/arch-studio.png";
-import saarTheBarber from "../images/saar-the-barber.png";
-import officelite from "../images/office-light.png";
+import urlShorten from "../images/url-api.webp";
+import RockPaperScissors from "../images/rock-paper-scissors.webp";
+import guysPizza from "../images/guys-pizza.webp";
+import archstudio from "../images/arch-studio.webp";
+import saarTheBarber from "../images/saar-the-barber.webp";
+import officelite from "../images/office-light.webp";
 const ProjectCard = () => {
 
   const [projects] = useState([
@@ -34,7 +34,7 @@ const ProjectCard = () => {
       name: "Saar The Barber",
       animationDelay: "300",
       link: "https://github.com/ezraguy/saar-the-barber",
-      website: "https://www.saarthebarber.com/",
+      website: "https://saarbarber.netlify.app/",
       img: saarTheBarber,
     },
     {
@@ -82,12 +82,14 @@ const ProjectCard = () => {
               <img src={project.img} alt="project preview" />
               <div className="overlay">
                 <p className="align-bottom project-name">{project.name}</p>
-                <a href={project.link} rel="noopener noreferrer">
-                  <GitSvg data-aos="fade-left" />
-                </a>
-                <a href={project.website} rel="noopener noreferrer">
-                  <EyeSvg data-aos="fade-left" />
-                </a>
+                <div className="svg-wrap">
+                  <a href={project.link} rel="noopener noreferrer">
+                    <GitSvg data-aos="fade-left" />
+                  </a>
+                  <a href={project.website} rel="noopener noreferrer">
+                    <EyeSvg data-aos="fade-left" />
+                  </a>
+                </div>
               </div>
             </div>
           );
