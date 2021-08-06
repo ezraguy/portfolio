@@ -51,12 +51,12 @@ const HomeSection = () => {
             </Link>
             <Link
               offset={-60}
-              to={"contactMe"}
+              to={"skills"}
               smooth={isOnMobile}
               duration={700}
               className="letsTalk"
             >
-              LET'S CHAT
+              MY WORK
             </Link>
           </div>
         </div>
