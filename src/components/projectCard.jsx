@@ -35,6 +35,14 @@ const ProjectCard = () => {
       website: "https://saarbarber.netlify.app/",
       img: saarTheBarber,
     },
+    {
+      id: 4,
+      name: "Shortly",
+      animationDelay: "400",
+      link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
+      website: "https://url-shortening-api-lp-ge.netlify.app/",
+      img: urlShorten,
+    },
 
     {
       id: 5,
