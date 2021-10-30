@@ -8,7 +8,6 @@ import archstudio from "../images/arch-studio.webp";
 import saarTheBarber from "../images/saar-the-barber.webp";
 import officelite from "../images/office-light.webp";
 const ProjectCard = () => {
-
   const [projects] = useState([
     {
       id: 1,
@@ -29,7 +28,6 @@ const ProjectCard = () => {
     },
 
     {
-
       id: 3,
       name: "Saar The Barber",
       animationDelay: "300",
@@ -37,24 +35,14 @@ const ProjectCard = () => {
       website: "https://saarbarber.netlify.app/",
       img: saarTheBarber,
     },
-    {
-      id: 4,
-      name: "Shortly",
-      animationDelay: "400",
-      link: "https://github.com/ezraguy/URL-shortening-API-landing-page",
-      website: "https://url-shortening-api-lp-ge.netlify.app/",
-      img: urlShorten,
-    },
 
     {
-
       id: 5,
       name: "Officelite",
       animationDelay: "500",
       link: "https://github.com/ezraguy/office-light-challenge",
       website: "https://office-light-ge.netlify.app/",
       img: officelite,
-
     },
     {
       id: 6,
@@ -64,9 +52,7 @@ const ProjectCard = () => {
       website: "https://confident-beaver-d51f12.netlify.app/",
       img: guysPizza,
     },
-
-  ])
-
+  ]);
 
   return (
     <div className="container-fluid">
@@ -83,10 +69,18 @@ const ProjectCard = () => {
               <div className="overlay">
                 <p className="align-bottom project-name">{project.name}</p>
                 <div className="svg-wrap">
-                  <a href={project.link} rel="noopener noreferrer">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <GitSvg data-aos="fade-left" />
                   </a>
-                  <a href={project.website} rel="noopener noreferrer">
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <EyeSvg data-aos="fade-left" />
                   </a>
                 </div>
@@ -97,7 +91,6 @@ const ProjectCard = () => {
       </div>
     </div>
   );
-}
-
+};
 
 export default ProjectCard;
