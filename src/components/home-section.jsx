@@ -23,7 +23,7 @@ const HomeSection = () => {
           </div>
           <div
             data-aos="fade-right"
-            data-aos-delay="10000s"
+            data-aos-delay="200"
             className="firstMainHeader"
           >
             Front End Developer
