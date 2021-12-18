@@ -1,14 +1,15 @@
 $grid-breakpoints: (
-        xs: 0,
-        sm: 645px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px,
-        xxl: 1900px
+  xs: 0,
+  sm: 645px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px,
 );
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import'./_header.scss';
-@import'./_inputValidation.scss';
-@import'./_projectCard.scss';
-@import'./_sections.scss';
-@import'./_topBtn.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './_header.scss';
+@import './_inputValidation.scss';
+@import './_projectCard.scss';
+@import './_sections.scss';
+@import './_topBtn.scss';
+@import './_loader.scss';

@@ -1,4 +1,4 @@
-$main_font: "Roboto";
+$main_font: 'Roboto';
 
 .main_header {
   font-size: 40pt;
@@ -25,7 +25,6 @@ $main_font: "Roboto";
 }
 
 #home {
- 
   margin: 0px;
   padding: 0px;
   font-family: $main_font;
@@ -59,6 +58,7 @@ $main_font: "Roboto";
       font-size: 1.5em;
       color: white;
       font-weight: bold;
+      animation-delay: 1s !important;
     }
 
     .underTitleTxt {
@@ -80,7 +80,7 @@ $main_font: "Roboto";
     float: right;
     margin: 0px;
     padding: 0px;
-    background-image: url("../images/profile_3.webp");
+    background-image: url('../images/profile_3.webp');
     background-position: center;
     background-size: cover;
     opacity: 0.7;
@@ -107,28 +107,25 @@ $main_font: "Roboto";
     &:hover {
       transform: translateY(-5px);
     }
-    
-    &:focus{
-       outline: none;
-    }
 
-    
+    &:focus {
+      outline: none;
+    }
   }
 
   .letsTalk {
-   @extend .aboutMeBtn;
+    @extend .aboutMeBtn;
     background-color: #ffffff;
     color: rgb(85, 85, 85);
     border: none;
-    
 
     &:hover {
       transform: translateY(-5px);
     }
 
-    &:focus{
+    &:focus {
       outline: none;
-   }
+    }
   }
 
   .sideIcons {
@@ -155,7 +152,6 @@ $main_font: "Roboto";
 }
 
 #about {
- 
   margin: 0px;
   padding: 0px;
   font-family: $main_font;
@@ -190,7 +186,7 @@ $main_font: "Roboto";
       text-align: center;
       font-family: $main_font;
       font-size: 12pt;
-      letter-spacing: .4px;
+      letter-spacing: 0.4px;
     }
   }
 
@@ -262,8 +258,7 @@ $main_font: "Roboto";
   .projects {
     margin-top: 20px;
     padding-bottom: 50px;
-  } 
-  
+  }
 }
 
 #contactMe {

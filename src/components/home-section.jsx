@@ -1,19 +1,15 @@
-import React from "react";
-import ScrollTopBtn from "./scrollTopBtn";
-import { ReactComponent as GitSvg } from "../svg/gitSvg.svg";
-import { ReactComponent as LinkedInSvg } from "../svg/linkedIn.svg";
+import React, { useEffect, useState } from 'react';
+import ScrollTopBtn from './scrollTopBtn';
+import { ReactComponent as GitSvg } from '../svg/gitSvg.svg';
+import { ReactComponent as LinkedInSvg } from '../svg/linkedIn.svg';
 import { Link } from 'react-scroll';
-import { useState } from "react";
-import { useEffect } from "react";
 
 const HomeSection = () => {
-
-  const [isOnMobile, setIsOnMobile] = useState(false)
+  const [isOnMobile, setIsOnMobile] = useState(false);
 
   useEffect(() => {
-    if (window.screen.width < 600)
-      setIsOnMobile(true)
-  }, [])
+    if (window.screen.width < 600) setIsOnMobile(true);
+  }, []);
   return (
     <div id="home" className="row container-fluid">
       <div className="leftDiv col-lg-6 col-md-6 col-sm-6 col-xs-12 container ">
@@ -23,12 +19,11 @@ const HomeSection = () => {
             data-aos-delay="100"
             className="labelAboveTitle"
           >
-
             Hey, I'm Guy Ezra
           </div>
           <div
             data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos-delay="10000s"
             className="firstMainHeader"
           >
             Front End Developer
@@ -43,15 +38,16 @@ const HomeSection = () => {
           <div data-aos="fade-right" data-aos-delay="400">
             <Link
               offset={-80}
-              to={"about"}
+              to={'about'}
               smooth={isOnMobile}
               duration={700}
-              className="aboutMeBtn">
+              className="aboutMeBtn"
+            >
               ABOUT ME
             </Link>
             <Link
               offset={-60}
-              to={"skills"}
+              to={'skills'}
               smooth={isOnMobile}
               duration={700}
               className="letsTalk"
@@ -76,6 +72,6 @@ const HomeSection = () => {
       <div className="rightDiv container col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
     </div>
   );
-}
+};
 
 export default HomeSection;
