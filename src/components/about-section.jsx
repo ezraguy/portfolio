@@ -1,8 +1,8 @@
-import React from "react";
-import "aos/dist/aos.css";
-import { ReactComponent as SpeedSvg } from "../svg/speedSvg.svg";
-import { ReactComponent as ResponsiveSvg } from "../svg/responsiveSvg.svg";
-import { ReactComponent as AliveSvg } from "../svg/aliveSvg.svg";
+import React from 'react';
+import 'aos/dist/aos.css';
+import { ReactComponent as SpeedSvg } from '../svg/speedSvg.svg';
+import { ReactComponent as ResponsiveSvg } from '../svg/responsiveSvg.svg';
+import { ReactComponent as AliveSvg } from '../svg/aliveSvg.svg';
 
 function aboutSection() {
   return (
@@ -12,19 +12,21 @@ function aboutSection() {
         <div data-aos="fade-left" className="underLineDark"></div>
 
         <div data-aos="fade-right" className="textUnderHeader ">
-          Hey, I'm a 24 years old front-end developer with a big passion for
+          {`
+          Hey, I'm a ${
+            new Date().getFullYear() - 1997
+          } years old front-end developer with a big passion for
           making websites come to life. My main priority is to ensure the users
           have fun on my site while getting the information they need. It only
           takes users around 3 seconds to decide if they want to stay, so in
           that short time window it's my job to make sure they want to stick
           around.
+`}
         </div>
       </div>
       <div className="header container">
         <span className="">MY CORE VALUES</span>
-        <div data-aos="fade-right" className="underLineDark">
-
-        </div>
+        <div data-aos="fade-right" className="underLineDark"></div>
       </div>
 
       <div className="values container-fluid ">
@@ -46,7 +48,7 @@ function aboutSection() {
               <h3 className="text-bold">FAST</h3>
               <p className="card-text">
                 The user's time is valuable so the website has to be fast and
-                with minimal loading time.{" "}
+                with minimal loading time.{' '}
               </p>
             </div>
           </div>
